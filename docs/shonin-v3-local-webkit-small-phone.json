@@ -1,0 +1,248 @@
+{
+  "version": "3.0.0",
+  "base": "http://127.0.0.1:5175/shonin-defense/index.html",
+  "engine": "webkit",
+  "name": "small-phone",
+  "mode": "hard",
+  "weapon": "pierce",
+  "utility": "shield",
+  "input": "WebKit PointerEvent drag + native action tap",
+  "physicalIPhone": false,
+  "layout": {
+    "w": 320,
+    "h": 568,
+    "scrollWidth": 320,
+    "button": 548
+  },
+  "covered": [
+    "1:waves",
+    "1:boss",
+    "1:clear",
+    "2:waves",
+    "2:boss",
+    "2:clear",
+    "3:waves",
+    "3:boss",
+    "3:clear"
+  ],
+  "win": true,
+  "score": 144973,
+  "hits": 0,
+  "stamps": 68,
+  "closeKills": 44,
+  "seconds": 99.70000000002541,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage",
+      "score": 0,
+      "lives": 4,
+      "name": "受付ホール"
+    },
+    {
+      "t": 10.41,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 5115,
+      "lives": 4,
+      "id": "level",
+      "text": "処理速度 UP / Lv.2"
+    },
+    {
+      "t": 12.5,
+      "stage": 1,
+      "type": "burst",
+      "score": 7895,
+      "lives": 4,
+      "x": 153.570891921805,
+      "y": 446.1556397164335,
+      "cleared": 1
+    },
+    {
+      "t": 17.01,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 13025,
+      "lives": 4,
+      "id": "level",
+      "text": "処理速度 UP / Lv.3"
+    },
+    {
+      "t": 18.92,
+      "stage": 1,
+      "type": "boss",
+      "score": 16355,
+      "lives": 4,
+      "name": "受付一斉配信",
+      "hint": "突進を横にかわす。止まった瞬間が、承認の機会。"
+    },
+    {
+      "t": 26.29,
+      "stage": 1,
+      "type": "burst",
+      "score": 18475,
+      "lives": 4,
+      "x": 241.45853767190644,
+      "y": 332.0673513497944,
+      "cleared": 5
+    },
+    {
+      "t": 33.11,
+      "stage": 1,
+      "type": "burst",
+      "score": 18975,
+      "lives": 4,
+      "x": 238.93415208738458,
+      "y": 343.2806592287913,
+      "cleared": 5
+    },
+    {
+      "t": 38.29,
+      "stage": 1,
+      "type": "stageClear",
+      "score": 23975,
+      "lives": 4,
+      "perfect": true
+    },
+    {
+      "t": 40.1,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 23975,
+      "lives": 4,
+      "id": "pierce"
+    },
+    {
+      "t": 40.1,
+      "stage": 2,
+      "type": "stage",
+      "score": 23975,
+      "lives": 4,
+      "name": "回覧機関室"
+    },
+    {
+      "t": 47.62,
+      "stage": 2,
+      "type": "upgrade",
+      "score": 25820,
+      "lives": 4,
+      "id": "level",
+      "text": "処理速度 UP / Lv.4"
+    },
+    {
+      "t": 53.87,
+      "stage": 2,
+      "type": "burst",
+      "score": 28225,
+      "lives": 4,
+      "x": 109.57379064793828,
+      "y": 430.8687602928851,
+      "cleared": 1
+    },
+    {
+      "t": 58.87,
+      "stage": 2,
+      "type": "burst",
+      "score": 34810,
+      "lives": 4,
+      "x": 281.74767952839744,
+      "y": 250.96457045427803,
+      "cleared": 0
+    },
+    {
+      "t": 63.08,
+      "stage": 2,
+      "type": "boss",
+      "score": 43285,
+      "lives": 4,
+      "name": "差戻しループ",
+      "hint": "光る中継器を処理して、回覧の輪をほどく。"
+    },
+    {
+      "t": 65.65,
+      "stage": 2,
+      "type": "burst",
+      "score": 52945,
+      "lives": 4,
+      "x": 233.82067399883806,
+      "y": 254.13805393093932,
+      "cleared": 10
+    },
+    {
+      "t": 68.48,
+      "stage": 2,
+      "type": "stageClear",
+      "score": 62165,
+      "lives": 4,
+      "perfect": true
+    },
+    {
+      "t": 70.28,
+      "stage": 2,
+      "type": "upgrade",
+      "score": 62165,
+      "lives": 4,
+      "id": "shield"
+    },
+    {
+      "t": 70.28,
+      "stage": 3,
+      "type": "stage",
+      "score": 62165,
+      "lives": 4,
+      "name": "月末決裁室"
+    },
+    {
+      "t": 91.5,
+      "stage": 3,
+      "type": "burst",
+      "score": 110530,
+      "lives": 4,
+      "x": 196.28273665494336,
+      "y": 418.492575689191,
+      "cleared": 1
+    },
+    {
+      "t": 91.56,
+      "stage": 3,
+      "type": "boss",
+      "score": 111655,
+      "lives": 4,
+      "name": "月末締め",
+      "hint": "締切線の外へ。開いた承認口に近づく。"
+    },
+    {
+      "t": 96.42,
+      "stage": 3,
+      "type": "burst",
+      "score": 120355,
+      "lives": 4,
+      "x": 219.17112455993853,
+      "y": 208.62319695221157,
+      "cleared": 12
+    },
+    {
+      "t": 97.89,
+      "stage": 3,
+      "type": "stageClear",
+      "score": 132355,
+      "lives": 4,
+      "perfect": true
+    },
+    {
+      "t": 99.7,
+      "stage": 3,
+      "type": "end",
+      "score": 144973,
+      "lives": 4,
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "errors": [],
+  "network": []
+}

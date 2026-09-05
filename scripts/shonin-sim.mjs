@@ -1,15 +1,5 @@
 import {Game} from '../public/shonin-defense/engine.js';
 import {decision} from './shonin-controller.mjs';
-import fs from 'node:fs/promises';
-const results=[];
-for(const mode of ['normal','hard'])for(const strategy of ['idle','sweep','aim','tactical'])for(const seed of [1,997,8712,44677,998111,51234]){
- const g=new Game(seed,mode);g.start();let tick=0;
- while(g.t<260&&g.phase!=='ended'){
-  if(g.phase==='upgrade')g.chooseUpgrade(g.stage===0?'pierce':'shield');
-  if(tick++%12===0){const d=decision(g.snapshot(),strategy);g.setTarget(d.x);if(d.burst)g.burst();}
-  g.update(1/120);g.events=[];
- }
- results.push({mode,strategy,seed,win:g.win,stage:g.stage+1,t:+g.t.toFixed(1),score:g.score,hits:g.hits,kills:g.kills,perfects:g.perfects,maxCombo:g.maxCombo,reason:g.reason,maxHazards:g.maxHazards,log:g.log});
-}
-await fs.mkdir('.cache/shonin-v2',{recursive:true});await fs.writeFile('.cache/shonin-v2/balance-detail.json',JSON.stringify(results,null,2));await fs.writeFile('docs/shonin-v2-balance.json',JSON.stringify(results.map(({log,...summary})=>summary),null,2));
-for(const mode of ['normal','hard'])for(const strategy of ['idle','sweep','aim','tactical']){const rs=results.filter(r=>r.mode===mode&&r.strategy===strategy);console.log({mode,strategy,wins:rs.filter(x=>x.win).length,score:rs.map(x=>x.score),stage:rs.map(x=>x.stage),time:rs.map(x=>x.t),reason:rs.map(x=>x.reason)});}
+import fs from 'node:fs';
+const rows=[];for(const mode of ['normal','hard'])for(const strategy of ['idle','sweep','circle','tactical'])for(const seed of [1,997,8712,44677,998111,51234]){const g=new Game(seed,mode);g.start();let frames=0;while(g.phase!=='ended'&&frames++<4000){if(g.phase==='upgrade')g.chooseUpgrade(g.stage===0?'pierce':'shield');const d=decision(g.snapshot(),strategy);g.move(d.x,d.y);if(d.burst)g.burst();for(let i=0;i<12;i++)g.update(1/120);g.events=[];}rows.push({mode,strategy,seed,win:g.win,stage:g.stage,seconds:+g.t.toFixed(1),score:g.score,hits:g.hits,kills:g.kills,stamps:g.stamps,close:g.closeKills,reason:g.reason,log:g.log});}
+fs.mkdirSync('.cache/shonin-v3',{recursive:true});fs.writeFileSync('.cache/shonin-v3/balance-detail.json',JSON.stringify(rows,null,2));const summary=[];for(const mode of ['normal','hard'])for(const strategy of ['idle','sweep','circle','tactical']){const r=rows.filter(x=>x.mode===mode&&x.strategy===strategy);summary.push({mode,strategy,wins:r.filter(x=>x.win).length,runs:r.length,meanScore:Math.round(r.reduce((a,x)=>a+x.score,0)/r.length),meanSeconds:Math.round(r.reduce((a,x)=>a+x.seconds,0)/r.length),meanHits:+(r.reduce((a,x)=>a+x.hits,0)/r.length).toFixed(1)});}fs.writeFileSync('docs/shonin-v3-balance.json',JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));

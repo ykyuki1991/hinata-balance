@@ -1,0 +1,198 @@
+{
+  "version": "3.0.0",
+  "base": "http://127.0.0.1:5175/shonin-defense/index.html",
+  "engine": "chromium",
+  "name": "iphone",
+  "mode": "normal",
+  "weapon": "wide",
+  "utility": "charge",
+  "input": "native CDP touch drag + simultaneous action touch",
+  "physicalIPhone": false,
+  "layout": {
+    "w": 390,
+    "h": 664,
+    "scrollWidth": 390,
+    "button": 643
+  },
+  "covered": [
+    "1:waves",
+    "1:boss",
+    "1:clear",
+    "2:waves",
+    "2:boss",
+    "2:clear",
+    "3:waves",
+    "3:boss",
+    "3:clear"
+  ],
+  "win": true,
+  "score": 101680,
+  "hits": 3,
+  "stamps": 53,
+  "closeKills": 45,
+  "seconds": 106.65833333336428,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage",
+      "score": 0,
+      "lives": 4,
+      "name": "受付ホール"
+    },
+    {
+      "t": 10.75,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 5265,
+      "lives": 4,
+      "id": "level",
+      "text": "処理速度 UP / Lv.2"
+    },
+    {
+      "t": 12.82,
+      "stage": 1,
+      "type": "damage",
+      "score": 7420,
+      "lives": 3,
+      "x": 218.91766642135033,
+      "y": 227.8637485802816,
+      "reason": "催促弾に被弾"
+    },
+    {
+      "t": 16.72,
+      "stage": 1,
+      "type": "boss",
+      "score": 10900,
+      "lives": 3,
+      "name": "受付一斉配信",
+      "hint": "突進を横にかわす。止まった瞬間が、承認の機会。"
+    },
+    {
+      "t": 18.65,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 11980,
+      "lives": 3,
+      "id": "level",
+      "text": "処理速度 UP / Lv.3"
+    },
+    {
+      "t": 24.46,
+      "stage": 1,
+      "type": "damage",
+      "score": 12365,
+      "lives": 2,
+      "x": 227.8464963869082,
+      "y": 323.2910999663564,
+      "reason": "催促弾に被弾"
+    },
+    {
+      "t": 34.66,
+      "stage": 1,
+      "type": "stageClear",
+      "score": 15865,
+      "lives": 2,
+      "perfect": false
+    },
+    {
+      "t": 36.47,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 15865,
+      "lives": 3,
+      "id": "wide"
+    },
+    {
+      "t": 36.47,
+      "stage": 2,
+      "type": "stage",
+      "score": 15865,
+      "lives": 3,
+      "name": "回覧機関室"
+    },
+    {
+      "t": 50.56,
+      "stage": 2,
+      "type": "damage",
+      "score": 19685,
+      "lives": 2,
+      "x": 127.49094491032209,
+      "y": 455.29149201376083,
+      "reason": "催促弾に被弾"
+    },
+    {
+      "t": 53.15,
+      "stage": 2,
+      "type": "upgrade",
+      "score": 21660,
+      "lives": 2,
+      "id": "level",
+      "text": "処理速度 UP / Lv.4"
+    },
+    {
+      "t": 59.29,
+      "stage": 2,
+      "type": "boss",
+      "score": 32025,
+      "lives": 2,
+      "name": "差戻しループ",
+      "hint": "光る中継器を処理して、回覧の輪をほどく。"
+    },
+    {
+      "t": 65.7,
+      "stage": 2,
+      "type": "stageClear",
+      "score": 42240,
+      "lives": 2,
+      "perfect": false
+    },
+    {
+      "t": 67.51,
+      "stage": 2,
+      "type": "upgrade",
+      "score": 42240,
+      "lives": 3,
+      "id": "charge"
+    },
+    {
+      "t": 67.51,
+      "stage": 3,
+      "type": "stage",
+      "score": 42240,
+      "lives": 3,
+      "name": "月末決裁室"
+    },
+    {
+      "t": 94.22,
+      "stage": 3,
+      "type": "boss",
+      "score": 77180,
+      "lives": 3,
+      "name": "月末締め",
+      "hint": "締切線の外へ。開いた承認口に近づく。"
+    },
+    {
+      "t": 104.85,
+      "stage": 3,
+      "type": "stageClear",
+      "score": 90980,
+      "lives": 3,
+      "perfect": true
+    },
+    {
+      "t": 106.66,
+      "stage": 3,
+      "type": "end",
+      "score": 101680,
+      "lives": 3,
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "errors": [],
+  "network": []
+}

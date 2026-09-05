@@ -54,4 +54,4 @@ Pillow・rembg[cpu]を入れた環境で `scripts/prepareBlogPhotos.py`、続い
 
 ## 追加ゲーム: 承認防衛線
 
-**[承認防衛線 — 未処理、接近中。を遊ぶ](https://ykyuki1991.github.io/hinata-balance/shonin-defense/)** — 朝の受付・回覧経路・月末の夜を突破する約2〜3分の3ステージシューティング。攻略の異なる3ボス、装備選択、繁忙日モード、評価・実績を搭載。仕様・操作・検証方法は [docs/shonin-defense.md](docs/shonin-defense.md)。既存のひなたバランスとは独立したゲームです。
+**[承認防衛線 — 未処理、接近中。を遊ぶ](https://ykyuki1991.github.io/hinata-balance/shonin-defense/)** — 全方向から迫る申請を、移動と差戻しで切り抜けるアリーナシューティング。指一本の移動・自動照準・近距離承認・決裁印の回収で、約2〜3分に判断を凝縮。仕様は [docs/shonin-defense.md](docs/shonin-defense.md)、調査と再設計の理由は [docs/shonin-v3-design.md](docs/shonin-v3-design.md)。既存のひなたバランスとは独立しています。

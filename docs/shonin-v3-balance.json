@@ -1,0 +1,74 @@
+[
+  {
+    "mode": "normal",
+    "strategy": "idle",
+    "wins": 0,
+    "runs": 6,
+    "meanScore": 6150,
+    "meanSeconds": 27,
+    "meanHits": 4
+  },
+  {
+    "mode": "normal",
+    "strategy": "sweep",
+    "wins": 0,
+    "runs": 6,
+    "meanScore": 8707,
+    "meanSeconds": 32,
+    "meanHits": 4
+  },
+  {
+    "mode": "normal",
+    "strategy": "circle",
+    "wins": 0,
+    "runs": 6,
+    "meanScore": 18747,
+    "meanSeconds": 79,
+    "meanHits": 4.7
+  },
+  {
+    "mode": "normal",
+    "strategy": "tactical",
+    "wins": 6,
+    "runs": 6,
+    "meanScore": 120019,
+    "meanSeconds": 103,
+    "meanHits": 0.3
+  },
+  {
+    "mode": "hard",
+    "strategy": "idle",
+    "wins": 0,
+    "runs": 6,
+    "meanScore": 7600,
+    "meanSeconds": 25,
+    "meanHits": 4
+  },
+  {
+    "mode": "hard",
+    "strategy": "sweep",
+    "wins": 0,
+    "runs": 6,
+    "meanScore": 9737,
+    "meanSeconds": 33,
+    "meanHits": 4
+  },
+  {
+    "mode": "hard",
+    "strategy": "circle",
+    "wins": 0,
+    "runs": 6,
+    "meanScore": 12083,
+    "meanSeconds": 51,
+    "meanHits": 4
+  },
+  {
+    "mode": "hard",
+    "strategy": "tactical",
+    "wins": 6,
+    "runs": 6,
+    "meanScore": 110127,
+    "meanSeconds": 111,
+    "meanHits": 2.3
+  }
+]

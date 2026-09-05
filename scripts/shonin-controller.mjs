@@ -1,19 +1,30 @@
-// QA strategies use read-only snapshots; all browser movement goes through input events.
+// QA controller reads the same visible positions/telegraphs a player can see.
+import {lineDistance,dist,blocksLine} from '../public/shonin-defense/engine.js';
 export function decision(s,strategy='tactical'){
-  if(strategy==='idle')return {x:240,burst:false};
-  if(strategy==='sweep')return {x:240+Math.sin(s.t*1.6)*190,burst:s.energy>=100&&s.hazards.length>9};
-  let target=null;
-  const danger=s.enemies.filter(e=>e.y>390).sort((a,b)=>b.y-a.y)[0];
-  if(danger)target={x:danger.x,weight:10};
-  else if(s.boss){const b=s.boss,flight=(s.y-27-b.y)/680,x=240+Math.sin((b.age+flight)*.7)*100;if(s.stage===0&&!b.open){const n=b.nodes.filter(n=>n.hp>0).sort((a,b)=>Math.abs(x+a.side*72-s.x)-Math.abs(x+b.side*72-s.x))[0];if(n)target={x:x+n.side*72,weight:7};}else target={x:x+(s.stage===1?Math.sin((b.age+flight)*1.1)*38:s.stage===2?Math.sin((b.age+flight)*.85)*48:0),weight:b.open?7:2};}
-  else {const list=s.enemies.filter(e=>e.y>5).sort((a,b)=>{const va=(a.type==='relay'&&!a.shot?220:0)+a.y-Math.abs(a.x-s.x)*.35,vb=(b.type==='relay'&&!b.shot?220:0)+b.y-Math.abs(b.x-s.x)*.35;return vb-va;});if(list[0])target={x:list[0].x,weight:7};}
-  if(strategy==='aim')return {x:target?.x??240,burst:s.energy>=100&&s.hazards.length>15};
-  let best=-Infinity,bestX=s.x,riskAtCurrent=0;
-  for(let x=24;x<=456;x+=8){let score=target?target.weight*Math.exp(-Math.pow((x-target.x)/35,2)):0;score-=Math.abs(x-s.x)*.003;
-    for(const b of s.hazards){if(b.kind==='beam'){if(Math.abs(x-b.x)<b.r+12)score-=100;if((s.x-b.x)*(x-b.x)<0&&Math.abs(s.x-b.x)>b.r+6)score-=120;continue;}if(b.vy<=0)continue;const hitTime=(s.y-b.y)/b.vy;if(hitTime<-.08||hitTime>2.1)continue;const hx=b.x+b.vx*hitTime;const reachable=s.x+Math.sign(x-s.x)*Math.min(Math.abs(x-s.x),490*Math.max(0,hitTime));const dist=Math.abs(hx-reachable);if(dist<44){const risk=42*Math.exp(-Math.pow(dist/(b.r+13),2))*(hitTime<.15?1.5:1);score-=risk;if(Math.abs(s.x-hx)<18&&hitTime<.45)riskAtCurrent++;}}
-    for(const w of s.warnings){if(w.kind==='beam'&&Math.abs(x-w.x)<w.width/2+14)score-=70;}
-    for(const item of s.items)if(item.y>s.y-150)score+=3*Math.exp(-Math.pow((x-item.x)/35,2));
-    if(score>best){best=score;bestX=x;}
+ if(strategy==='idle')return {x:0,y:0,burst:false};
+ if(strategy==='circle'){const a=s.t*.9;return {x:Math.cos(a),y:Math.sin(a),burst:s.energy>=100};}
+ if(strategy==='sweep')return {x:Math.sin(s.t*1.2)>0?1:-1,y:0,burst:false};
+ let goal=null,goalValue=-Infinity;
+ for(const e of s.enemies){if(e.spawn>0)continue;const value=(e.node?480:e.type==='relay'?370:180)-dist(s,e);if(value>goalValue){goalValue=value;goal=e;}}
+ if(s.boss?.open){goal=s.boss;goalValue=200;}
+ for(const i of s.items){const v=210-dist(s,i);if(v>goalValue){goal=i;goalValue=v;}}
+ if(!goal)goal={x:240,y:350};
+ let best=-Infinity,chosen={x:0,y:0};const candidates=[{x:0,y:0},...Array.from({length:24},(_,i)=>({x:Math.cos(i*Math.PI/12),y:Math.sin(i*Math.PI/12)}))];
+ for(const v of candidates){let score=0;
+  for(const dt of [.18,.4,.7]){const p={x:s.x+v.x*205*dt,y:s.y+v.y*205*dt};
+   if(p.x<30||p.x>450||p.y<75||p.y>550)score-=800;
+   for(const b of s.blocks){const d=dist(p,b);if(d<b.r+18)score-=600;}
+   for(const e of s.enemies){if(e.spawn>dt)continue;const a=e.state==='rush'?e.angle:Math.atan2(s.y-e.y,s.x-e.x),speed=e.state==='rush'?310:['chaser','return'].includes(e.type)?70:0;const predicted={x:e.x+Math.cos(a)*speed*dt,y:e.y+Math.sin(a)*speed*dt};const d=dist(p,predicted);score-=Math.max(0,55-d)*9;}
+   if(s.boss){const b=s.boss;const pred=b.state==='rush'?{x:b.x+Math.cos(b.angle)*b.speed*dt,y:b.y+Math.sin(b.angle)*b.speed*dt}:b;score-=Math.max(0,70-dist(p,pred))*10;}
+   for(const h of s.hazards){if(h.life<dt)continue;const d=h.kind==='beam'?lineDistance(p,h,{x:h.tx,y:h.ty})-h.r:dist(p,{x:h.x+h.vx*dt,y:h.y+h.vy*dt});score-=Math.max(0,27-d)*16;}
+   for(const w of s.warnings){if(w.left>dt+.3)continue;if(w.kind==='beam'||w.kind==='rush'){const d=lineDistance(p,w,{x:w.tx,y:w.ty});score-=Math.max(0,(w.kind==='beam'?(w.width||15)+22:40)-d)*9;}if(w.kind==='shot'){const a=Math.atan2(w.ty-w.y,w.tx-w.x);const bullet={x:w.x+Math.cos(a)*165*Math.max(0,dt-w.left),y:w.y+Math.sin(a)*165*Math.max(0,dt-w.left)};score-=Math.max(0,36-dist(p,bullet))*8;}}
   }
-  return {x:bestX,burst:s.energy>=100&&(best<-7||riskAtCurrent>2||s.hazards.length>=16||(s.boss?.open&&s.boss.hp<8))};
+  const end={x:s.x+v.x*55,y:s.y+v.y*55};score-=dist(end,goal)*.5;
+  if(blocksLine(end,goal,s.blocks))score-=70;
+  // Avoid endless tangential orbiting: use inner routes to collect rewards.
+  if(end.x<60||end.x>420||end.y<95||end.y>525)score-=25;
+  if(score>best){best=score;chosen=v;}
+ }
+ const danger=s.hazards.some(h=>h.kind==='beam'?lineDistance(s,h,{x:h.tx,y:h.ty})<h.r+35:dist(s,h)<65)||s.enemies.some(e=>e.spawn<=0&&dist(s,e)<55);
+ return {...chosen,burst:s.energy>=100&&(danger||s.enemies.filter(e=>e.spawn<=0&&dist(s,e)<110).length>=2)};
 }
