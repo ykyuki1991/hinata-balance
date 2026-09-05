@@ -51,3 +51,7 @@ Pillow・rembg[cpu]を入れた環境で `scripts/prepareBlogPhotos.py`、続い
 - 実写真の全員クリアはNORMALで確認。HARD/ALLは途中までの実操作と、小矩形fixtureによる最終人数・保存処理テストを分けています。
 - 公開HTTPSでは27画像・3モードのタッチ操作・保存・オフラインPWAを検証。iPhone実機での操作とホーム画面追加は未確認。
 - 記録はブラウザごと。localhostの記録は公開先へ自動移行しません。ブラウザデータ削除で消える場合があります。
+
+## 追加ゲーム: 承認防衛線
+
+**[承認防衛線 — 未処理、接近中。を遊ぶ](https://ykyuki1991.github.io/hinata-balance/shonin-defense/)** — 指で動かすだけの75秒シューティング。仕様・操作・検証方法は [docs/shonin-defense.md](docs/shonin-defense.md)。既存のひなたバランスとは独立したゲームです。
