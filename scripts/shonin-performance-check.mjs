@@ -1,6 +1,6 @@
 import {chromium,webkit,devices} from '@playwright/test';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const base=process.env.GAME_URL||'http://127.0.0.1:5175/shonin-defense/index.html',results=[];
+const base=process.env.GAME_URL||'http://127.0.0.1:5177/shonin-defense/index.html',results=[];
 for(const engine of ['chromium','webkit']){const b=await(engine==='chromium'?chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true}):webkit.launch());try{const p=await b.newPage({...devices['iPhone 13'],viewport:{width:390,height:844}});await p.goto(base+'?qa=1');await p.locator('#start').tap();const begun=Date.now();while(Date.now()-begun<14000){const box=await p.locator('canvas').boundingBox();await p.touchscreen.tap(box.x+box.width*(.5+.36*Math.sin((Date.now()-begun)/800)),box.y+box.height*.88);await p.waitForTimeout(240);}const s=await p.evaluate(()=>gameSnapshot());assert.equal(s.phase,'playing');assert.ok(s.performance.samples>=100);assert.ok(s.performance.p95<20,JSON.stringify(s.performance));results.push({engine,version:s.version,realClock:true,elapsedSeconds:s.t,...s.performance});}finally{await b.close();}}
-console.log(JSON.stringify(results));await fs.writeFile(`docs/shonin-v5-${base.startsWith('https:')?'public':'local'}-performance.json`,JSON.stringify({base,results,physicalIPhone:false},null,2));
+console.log(JSON.stringify(results));await fs.writeFile(`docs/shonin-v6-${base.startsWith('https:')?'public':'local'}-performance.json`,JSON.stringify({base,results,physicalIPhone:false},null,2));

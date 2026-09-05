@@ -5,3 +5,5 @@
 #actions{position:absolute;bottom:max(14px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:136px;display:flex;gap:16px;z-index:2}#actions button{position:static;width:60px;height:64px;background:#173139db;border:1px solid #a4d4c65c;border-radius:12px;padding:5px;color:#b8e6cb;display:flex;flex-direction:column;align-items:center;justify-content:center;touch-action:none}#actions b{font-size:24px;line-height:29px}#actions span{font-size:10px}#actions small{font-size:8px;opacity:.65}#actions button:disabled{opacity:.35}#reserve{position:absolute;top:-10px;left:0;width:100%;height:3px;background:#45615d}#reserve i{display:block;height:100%;width:calc(var(--energy,0)*100%);background:#b8e6cb}#game{cursor:crosshair}#hint{max-width:310px;line-height:1.7}#lives{letter-spacing:1px}@media(max-width:360px){#hud{gap:7px}#score{font-size:16px}#hud button{width:34px;height:34px}}
 
 #hint{white-space:pre-line}
+
+#actions{left:auto;right:max(18px,env(safe-area-inset-right));bottom:max(26px,env(safe-area-inset-bottom));width:64px;transform:none}#actions button{width:64px;height:64px}#game{cursor:grab}

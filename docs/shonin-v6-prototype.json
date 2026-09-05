@@ -1,0 +1,19 @@
+{
+  "oneTouch": true,
+  "aimInput": false,
+  "fireInput": false,
+  "chargedInput": false,
+  "seconds": 29.024999999998993,
+  "approved": 5,
+  "returned": 2,
+  "reapplied": 2,
+  "route": [
+    {
+      "stage": 0,
+      "option": "left"
+    }
+  ],
+  "initialX": 176.2048192771084,
+  "finalX": 176.2048192771084,
+  "errors": []
+}
