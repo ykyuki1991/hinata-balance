@@ -1,0 +1,46 @@
+{
+  "url": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "checkedAt": "2026-09-05T12:57:01.746Z",
+  "sourceFilesMatch": [
+    "index.html",
+    "style.css",
+    "engine.js",
+    "game.js",
+    "icon.svg"
+  ],
+  "layouts": [
+    {
+      "device": "iPhone 13",
+      "w": 390,
+      "h": 664,
+      "scroll": 0,
+      "pageWidth": 390,
+      "controlsBottom": 647,
+      "canvas": 475,
+      "qa": "undefined"
+    },
+    {
+      "device": "iPhone SE",
+      "w": 320,
+      "h": 568,
+      "scroll": 0,
+      "pageWidth": 320,
+      "controlsBottom": 551,
+      "canvas": 379,
+      "qa": "undefined"
+    },
+    {
+      "device": "iPhone 13 landscape",
+      "w": 750,
+      "h": 342,
+      "scroll": 0,
+      "pageWidth": 750,
+      "controlsBottom": 323.5,
+      "canvas": 204,
+      "qa": "undefined"
+    }
+  ],
+  "existingGameServiceWorkerCompatible": true,
+  "pagesRun": "https://github.com/ykyuki1991/hinata-balance/actions/runs/33967391621",
+  "deployedCommit": "28ac95f358cac90f82b9936e02b880914257b585"
+}

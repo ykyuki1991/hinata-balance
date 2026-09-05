@@ -30,3 +30,13 @@ GitHub Actionsはmainへのpushでlint、全単体テスト、ビルド、Pages�
 ブラウザ検証は実装状態を書き換えず、公開UIの入力とアニメーション時間の進行で実行します。`?qa=1` は読み取り専用のスナップショット関数だけを公開。通常URLには診断関数を出しません。
 
 iPhone端末の実機テストと、iPhoneサイズ・タッチ・WebKitのエミュレーションテストは区別します。実機は未使用です。ブラウザ検証結果は `docs/shonin-browser-check.json`。
+
+## 公開後の確認（2026-09-05）
+
+GitHub Pagesの[デプロイ #4](https://github.com/ykyuki1991/hinata-balance/actions/runs/33967391621) が成功。公開URLはHTTP 200、HTML/CSS/JS/SVGの全5ファイルが検証済みローカルソースと一致しました。
+
+公開URLでChromeとWebKit、デスクトップ・iPhone相当・小型スマホ・横画面の開始、移動、一括否認、一時停止、自然なゲームオーバー、リトライを検証。Chromeは実タッチイベントによるドラッグ、WebKitはタッチによる移動先指定を使用しています。iPhone実機は使用していません。
+
+タッチ入力で月末締めを撃破し、66件処理・42,950点でクリア。再読み込み後の自己ベスト保持も確認。小型iPhone相当の320×568でも、iPhone横向き相当の750×342でも、横はみ出し・操作ボタンの画面外配置はありません。既存ゲームのService Workerが有効なブラウザからも新ゲームへ移動できます。
+
+詳細: `docs/shonin-browser-check.json`、`docs/shonin-clear-check.json`、`docs/shonin-public-check.json`。公開ファイルの照合とレイアウト確認は `node scripts/shonin-public-check.mjs` で再実行できます。
