@@ -1,0 +1,518 @@
+{
+  "updated": "2026-09-05T04:11:20.832Z",
+  "members": [
+    {
+      "id": "25",
+      "name": "石塚 瑶季",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202607/mobpl4Wjd.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70228?ima=0000&cd=member",
+      "title": "幸せな一日",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 26.3375,
+      "height": 86,
+      "crop": {
+        "left": 272,
+        "top": 460,
+        "right": 516,
+        "bottom": 1260
+      },
+      "vertices": 24
+    },
+    {
+      "id": "37",
+      "name": "大田 美月",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mobZTBlOL.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70562?ima=0000&cd=member",
+      "title": "また好きにならざるを得ないような人に",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 23.470833333333335,
+      "height": 86,
+      "crop": {
+        "left": 314,
+        "top": 366,
+        "right": 555,
+        "bottom": 1254
+      },
+      "vertices": 21
+    },
+    {
+      "id": "38",
+      "name": "大野 愛実",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202606/mob8shmmx.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/69961?ima=0000&cd=member",
+      "title": "17たざか",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 26.158333333333335,
+      "height": 86,
+      "crop": {
+        "left": 357,
+        "top": 344,
+        "right": 630,
+        "bottom": 1243
+      },
+      "vertices": 13
+    },
+    {
+      "id": "39",
+      "name": "片山 紗希",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mobOJXGHE.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70506?ima=0000&cd=member",
+      "title": "しろたんお誕生日おめでとう🎂♡",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 31.891666666666666,
+      "height": 86,
+      "crop": {
+        "left": 119,
+        "top": 227,
+        "right": 508,
+        "bottom": 1279
+      },
+      "vertices": 12
+    },
+    {
+      "id": "12",
+      "name": "金村 美玖",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mobgLdBUg.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70501?ima=0000&cd=member",
+      "title": "明日、明後日、その先も！",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 28.129166666666666,
+      "height": 86,
+      "crop": {
+        "left": 325,
+        "top": 335,
+        "right": 612,
+        "bottom": 1217
+      },
+      "vertices": 16
+    },
+    {
+      "id": "21",
+      "name": "上村 ひなの",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mob2rU5hR.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70574?ima=0000&cd=member",
+      "title": "963",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 37.983333333333334,
+      "height": 86,
+      "crop": {
+        "left": 245,
+        "top": 436,
+        "right": 526,
+        "bottom": 1075
+      },
+      "vertices": 21
+    },
+    {
+      "id": "40",
+      "name": "蔵盛 妃那乃",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202606/mobMkBDtn.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/69796?ima=0000&cd=member",
+      "title": "ずっと一緒『蔵盛妃那乃』",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 37.625,
+      "height": 86,
+      "crop": {
+        "left": 177,
+        "top": 338,
+        "right": 540,
+        "bottom": 1168
+      },
+      "vertices": 17
+    },
+    {
+      "id": "14",
+      "name": "小坂 菜緒",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202602/mob8f7TuE.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/68115?ima=0000&cd=member",
+      "title": "好きな花はずっとそばで咲き誇る",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 22.754166666666666,
+      "height": 86,
+      "crop": {
+        "left": 378,
+        "top": 591,
+        "right": 559,
+        "bottom": 1279
+      },
+      "vertices": 18
+    },
+    {
+      "id": "27",
+      "name": "小西 夏菜実",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202606/mobSeZ6pa.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/69852?ima=0000&cd=member",
+      "title": "日々、滾る",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 35.65416666666667,
+      "height": 86,
+      "crop": {
+        "left": 190,
+        "top": 373,
+        "right": 555,
+        "bottom": 1255
+      },
+      "vertices": 16
+    },
+    {
+      "id": "41",
+      "name": "坂井 新奈",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mobEbGOG1.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70748?ima=0000&cd=member",
+      "title": "揺れても、根を張る",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 39.416666666666664,
+      "height": 86,
+      "crop": {
+        "left": 267,
+        "top": 467,
+        "right": 638,
+        "bottom": 1276
+      },
+      "vertices": 19
+    },
+    {
+      "id": "42",
+      "name": "佐藤 優羽",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mobpjUM5F.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70505?ima=0000&cd=member",
+      "title": "花火は散って夜の闇に紛れる。",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 24.904166666666665,
+      "height": 86,
+      "crop": {
+        "left": 311,
+        "top": 270,
+        "right": 602,
+        "bottom": 1279
+      },
+      "vertices": 15
+    },
+    {
+      "id": "28",
+      "name": "清水 理央",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mobBrWePd.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70658?ima=0000&cd=member",
+      "title": "Are you ready？🍧🥄",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 30.816666666666666,
+      "height": 86,
+      "crop": {
+        "left": 329,
+        "top": 374,
+        "right": 653,
+        "bottom": 1279
+      },
+      "vertices": 12
+    },
+    {
+      "id": "43",
+      "name": "下田 衣珠季",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202606/mobl8TTAa.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/69725?ima=0000&cd=member",
+      "title": "ミニチュアダックスのTシャツ🐾",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 23.829166666666666,
+      "height": 86,
+      "crop": {
+        "left": 217,
+        "top": 145,
+        "right": 531,
+        "bottom": 1279
+      },
+      "vertices": 15
+    },
+    {
+      "id": "29",
+      "name": "正源司 陽子",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202607/mobpfXef4.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70142?ima=0000&cd=member",
+      "title": "アイスは必ず透明なスプーンで口に運ぶ正源司陽子",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 24.1875,
+      "height": 86,
+      "crop": {
+        "left": 362,
+        "top": 369,
+        "right": 590,
+        "bottom": 1181
+      },
+      "vertices": 15
+    },
+    {
+      "id": "44",
+      "name": "高井 俐香",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202607/mobiErH22.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70343?ima=0000&cd=member",
+      "title": "にっこり調査隊♫♩",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 33.68333333333333,
+      "height": 86,
+      "crop": {
+        "left": 269,
+        "top": 228,
+        "right": 680,
+        "bottom": 1279
+      },
+      "vertices": 12
+    },
+    {
+      "id": "22",
+      "name": "髙橋 未来虹",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202605/mob1r1YVd.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/69552?ima=0000&cd=member",
+      "title": "交わらないものを繋げるように",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 33.8625,
+      "height": 86,
+      "crop": {
+        "left": 293,
+        "top": 305,
+        "right": 665,
+        "bottom": 1249
+      },
+      "vertices": 15
+    },
+    {
+      "id": "30",
+      "name": "竹内 希来里",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202601/mobYlNyOB.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/67526?ima=0000&cd=member",
+      "title": "はたち",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 49.9875,
+      "height": 86,
+      "crop": {
+        "left": 359,
+        "top": 457,
+        "right": 773,
+        "bottom": 1171
+      },
+      "vertices": 12
+    },
+    {
+      "id": "45",
+      "name": "鶴崎 仁香",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mobbW1h2U.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70576?ima=0000&cd=member",
+      "title": "せっかくこうして出会えたので、終点までお話しませんか？",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 27.770833333333332,
+      "height": 86,
+      "crop": {
+        "left": 435,
+        "top": 324,
+        "right": 683,
+        "bottom": 1095
+      },
+      "vertices": 17
+    },
+    {
+      "id": "31",
+      "name": "平尾 帆夏",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202607/mobngJCym.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70193?ima=0000&cd=member",
+      "title": "はじめてのCM撮影",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 53.57083333333333,
+      "height": 86,
+      "crop": {
+        "left": 279,
+        "top": 244,
+        "right": 695,
+        "bottom": 913
+      },
+      "vertices": 19
+    },
+    {
+      "id": "32",
+      "name": "平岡 海月",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202510/mob4Gf2Jx.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/66353?ima=0000&cd=member",
+      "title": "レース",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 35.65416666666667,
+      "height": 86,
+      "crop": {
+        "left": 149,
+        "top": 253,
+        "right": 573,
+        "bottom": 1279
+      },
+      "vertices": 14
+    },
+    {
+      "id": "33",
+      "name": "藤嶌 果歩",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202607/mobOaGcTO.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70016?ima=0000&cd=member",
+      "title": "あと1ヶ月記念日",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 48.55416666666667,
+      "height": 86,
+      "crop": {
+        "left": 285,
+        "top": 497,
+        "right": 719,
+        "bottom": 1266
+      },
+      "vertices": 21
+    },
+    {
+      "id": "46",
+      "name": "松尾 桜",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mobz1hQ38.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70559?ima=0000&cd=member",
+      "title": "アップデートしてメレンゲを作ろう",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 27.591666666666665,
+      "height": 86,
+      "crop": {
+        "left": 413,
+        "top": 564,
+        "right": 641,
+        "bottom": 1279
+      },
+      "vertices": 15
+    },
+    {
+      "id": "34",
+      "name": "宮地 すみれ",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202607/mobaHVlNs.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70135?ima=0000&cd=member",
+      "title": "",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 28.666666666666668,
+      "height": 86,
+      "crop": {
+        "left": 343,
+        "top": 411,
+        "right": 626,
+        "bottom": 1262
+      },
+      "vertices": 20
+    },
+    {
+      "id": "23",
+      "name": "森本 茉莉",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202608/mob3vlc8q.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/70447?ima=0000&cd=member",
+      "title": "三期生LIVEまであと少し！",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 27.054166666666667,
+      "height": 86,
+      "crop": {
+        "left": 347,
+        "top": 470,
+        "right": 590,
+        "bottom": 1247
+      },
+      "vertices": 21
+    },
+    {
+      "id": "24",
+      "name": "山口 陽世",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202606/mobwapJLy.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/69856?ima=0000&cd=member",
+      "title": "( ¨̮ )>≡私は月とか星が好きなようです。気づいたらそういうアクセサリー多めでした。星、月、太陽に目がいってしまう。",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 28.845833333333335,
+      "height": 86,
+      "crop": {
+        "left": 391,
+        "top": 466,
+        "right": 642,
+        "bottom": 1215
+      },
+      "vertices": 16
+    },
+    {
+      "id": "35",
+      "name": "山下 葉留花",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202606/mobi8KSgV.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/69859?ima=0000&cd=member",
+      "title": "はるはる日記🌱 - 17thシングル ひなた坂46ライブ -",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 51.420833333333334,
+      "height": 86,
+      "crop": {
+        "left": 178,
+        "top": 503,
+        "right": 641,
+        "bottom": 1279
+      },
+      "vertices": 20
+    },
+    {
+      "id": "36",
+      "name": "渡辺 莉奈",
+      "status": "ok",
+      "fullBody": true,
+      "url": "https://cdn.hinatazaka46.com/files/14/diary/official/member/moblog/202605/mobwZBQ2j.jpg",
+      "sourcePage": "https://www.hinatazaka46.com/s/official/diary/detail/69323?ima=0000&cd=member",
+      "title": "枯れないように照らしてあげたい",
+      "processing": "original photo proportions, reviewed transparent silhouette",
+      "width": 33.50416666666667,
+      "height": 86,
+      "crop": {
+        "left": 304,
+        "top": 479,
+        "right": 602,
+        "bottom": 1247
+      },
+      "vertices": 19
+    }
+  ]
+}

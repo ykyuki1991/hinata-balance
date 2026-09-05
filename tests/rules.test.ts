@@ -1,0 +1,8 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {targetFor,outside,stable,shuffled} from '../src/game/rules';import {recordResult,emptyRecord} from '../src/storage';import type {Result} from '../src/types';
+test('mode counts follow live roster',()=>{assert.equal(targetFor('NORMAL',27),10);assert.equal(targetFor('HARD',27),15);assert.equal(targetFor('ALL MEMBERS',31),31);assert.equal(targetFor('NORMAL',5),5);});
+test('fall needs the entire body outside',()=>{assert.equal(outside({min:{x:-10,y:10},max:{x:5,y:50}}),false);assert.equal(outside({min:{x:-50,y:10},max:{x:-1,y:50}}),true);assert.equal(outside({min:{x:10,y:651},max:{x:50,y:700}}),true);assert.equal(stable({velocity:{x:0,y:4},angularVelocity:0}),false);});
+test('best clear time and counts survive subsequent failure',()=>{const win:Result={mode:'NORMAL',count:10,target:10,seconds:90,clear:true,used:[]};let r=recordResult(emptyRecord(),win);r=recordResult(r,{...win,count:2,clear:false,seconds:10});assert.deepEqual(r,{plays:2,clears:1,max:10,best:90,bestScore:0});r=recordResult(r,{...win,seconds:80});assert.equal(r.best,80);});
+test('shuffle retains each member exactly once',()=>{assert.deepEqual(shuffled([1,2,3,4]).sort(),[1,2,3,4]);});
+
+test('new score records migrate old records without losing personal bests',()=>{const old={plays:7,clears:2,max:10,best:55};const r=recordResult(old,{mode:'NORMAL',count:5,target:10,seconds:30,clear:false,used:[],score:820});assert.equal(r.best,55);assert.equal(r.max,10);assert.equal(r.bestScore,820);assert.equal(recordResult(r,{mode:'NORMAL',count:1,target:10,seconds:5,clear:false,used:[],score:100}).bestScore,820);});
