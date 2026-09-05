@@ -18,7 +18,7 @@ for(const m of previous){
  const imagePath=`/assets/members/${m.id}-${createHash('sha256').update(image).digest('hex').slice(0,12)}.webp`;
  await fs.writeFile(`public${imagePath}`,image);
  const pixels=await sharp(image).ensureAlpha().raw().toBuffer({resolveWithObject:true});const W=pixels.info.width,H=pixels.info.height;
- const height=W/H>.75?72:86,width=height*W/H,points:{x:number;y:number}[]=[];
+ const height=W/H>.75?86:102,width=height*W/H,points:{x:number;y:number}[]=[];
  // Sample the actual photographed silhouette. Keep pose/asymmetry; flatten only the last 4% at the feet.
  for(let y=0;y<H;y+=6){let l=W,r=-1;for(let x=0;x<W;x++)if(pixels.data[(y*W+x)*4+3]>100){l=Math.min(l,x);r=Math.max(r,x);}if(r>=l){const yy=y>H*.96?height-1:y/H*height;points.push({x:l/W*width,y:yy},{x:r/W*width,y:yy});}}
  const collisionShape=hull(points);const mass=Number(Math.max(.65,Math.min(1.35,.65+width*.01)).toFixed(3));

@@ -6,3 +6,8 @@ test('balance earns more than dangerous placement; peak tilt prevents lucky-fram
  assert.ok(placementAward(0,0).points>placementAward(6,7).points);assert.ok(placementAward(6,7).points>placementAward(15,17).points);assert.equal(placementAward(24,24).points,100);
  assert.ok(clearBonus(40)>clearBonus(60));assert.equal(clearBonus(1000),300);
 });
+test('a level but overhanging stack cannot farm PERFECT',()=>{
+ assert.equal(placementAward(0,0,12).grade,'GOOD');
+ assert.equal(placementAward(0,0,35).grade,'DANGER');
+ assert.ok(placementAward(0,0,35).points<placementAward(0,0,0).points);
+});
