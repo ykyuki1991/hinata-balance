@@ -4,6 +4,7 @@
     {
       "engine": "chromium",
       "name": "laptop",
+      "version": "3.0.1",
       "w": 1280,
       "h": 720,
       "wide": 1280,
@@ -12,8 +13,8 @@
       "overlay": 435,
       "started": true,
       "performance": {
-        "samples": 183,
-        "p95": 0.29999999701976776,
+        "samples": 181,
+        "p95": 0.20000000298023224,
         "particles": 12,
         "maxHazards": 0
       },
@@ -22,6 +23,7 @@
     {
       "engine": "chromium",
       "name": "iphone",
+      "version": "3.0.1",
       "w": 390,
       "h": 844,
       "wide": 390,
@@ -30,7 +32,7 @@
       "overlay": 625,
       "started": true,
       "performance": {
-        "samples": 168,
+        "samples": 170,
         "p95": 0.29999999701976776,
         "particles": 0,
         "maxHazards": 0
@@ -40,6 +42,7 @@
     {
       "engine": "chromium",
       "name": "compact",
+      "version": "3.0.1",
       "w": 320,
       "h": 568,
       "wide": 320,
@@ -48,8 +51,8 @@
       "overlay": 359,
       "started": true,
       "performance": {
-        "samples": 153,
-        "p95": 0.29999999701976776,
+        "samples": 152,
+        "p95": 0.30000000447034836,
         "particles": 0,
         "maxHazards": 0
       },
@@ -58,6 +61,7 @@
     {
       "engine": "chromium",
       "name": "landscape",
+      "version": "3.0.1",
       "w": 750,
       "h": 342,
       "wide": 750,
@@ -66,8 +70,8 @@
       "overlay": 245,
       "started": true,
       "performance": {
-        "samples": 155,
-        "p95": 0.20000000298023224,
+        "samples": 154,
+        "p95": 0.30000000447034836,
         "particles": 0,
         "maxHazards": 0
       },
@@ -76,6 +80,7 @@
     {
       "engine": "webkit",
       "name": "laptop",
+      "version": "3.0.1",
       "w": 1280,
       "h": 720,
       "wide": 1280,
@@ -84,7 +89,7 @@
       "overlay": 435,
       "started": true,
       "performance": {
-        "samples": 172,
+        "samples": 175,
         "p95": 1,
         "particles": 12,
         "maxHazards": 0
@@ -94,6 +99,7 @@
     {
       "engine": "webkit",
       "name": "iphone",
+      "version": "3.0.1",
       "w": 390,
       "h": 844,
       "wide": 390,
@@ -102,7 +108,7 @@
       "overlay": 625,
       "started": true,
       "performance": {
-        "samples": 165,
+        "samples": 164,
         "p95": 1,
         "particles": 0,
         "maxHazards": 0
@@ -112,6 +118,7 @@
     {
       "engine": "webkit",
       "name": "compact",
+      "version": "3.0.1",
       "w": 320,
       "h": 568,
       "wide": 320,
@@ -130,6 +137,7 @@
     {
       "engine": "webkit",
       "name": "landscape",
+      "version": "3.0.1",
       "w": 750,
       "h": 342,
       "wide": 750,
@@ -138,7 +146,7 @@
       "overlay": 245,
       "started": true,
       "performance": {
-        "samples": 150,
+        "samples": 151,
         "p95": 1,
         "particles": 0,
         "maxHazards": 0

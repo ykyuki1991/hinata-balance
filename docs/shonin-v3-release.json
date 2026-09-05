@@ -1,0 +1,110 @@
+{
+  "version": "3.0.1",
+  "url": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "gameCommit": "135852be67fd68bcf21adc657737fc92e0e6e847",
+  "workflow": {
+    "id": 33974233777,
+    "url": "https://github.com/ykyuki1991/hinata-balance/actions/runs/33974233777",
+    "conclusion": "success"
+  },
+  "checkedAt": "2026-09-05T15:18:57.361Z",
+  "tests": 29,
+  "lint": "passed",
+  "build": "passed",
+  "simulationUnchangedSince": "3.0.0",
+  "browserRuns": [
+    {
+      "file": "shonin-v3-public-chromium-desktop.json",
+      "version": "3.0.1",
+      "engine": "chromium",
+      "scenario": "desktop",
+      "input": "keyboard WASD + Space",
+      "score": 101008,
+      "seconds": 110.60833333336743,
+      "hits": 0,
+      "resultLayout": {
+        "scroll": 598,
+        "height": 598,
+        "medalsBottom": 736.9375,
+        "overlayBottom": 796.5
+      },
+      "allStages": true,
+      "clear": true,
+      "gameOver": true,
+      "retry": true,
+      "persistence": true
+    },
+    {
+      "file": "shonin-v3-public-chromium-iphone.json",
+      "version": "3.0.1",
+      "engine": "chromium",
+      "scenario": "iphone",
+      "input": "native CDP touch drag + simultaneous action touch",
+      "score": 101214,
+      "seconds": 101.93333333336052,
+      "hits": 3,
+      "resultLayout": {
+        "scroll": 445,
+        "height": 445,
+        "medalsBottom": 522.390625,
+        "overlayBottom": 576
+      },
+      "allStages": true,
+      "clear": true,
+      "gameOver": true,
+      "retry": true,
+      "persistence": true
+    },
+    {
+      "file": "shonin-v3-public-webkit-iphone.json",
+      "version": "3.0.1",
+      "engine": "webkit",
+      "scenario": "iphone",
+      "input": "WebKit PointerEvent drag + native action tap",
+      "score": 101358,
+      "seconds": 105.53333333336339,
+      "hits": 0,
+      "resultLayout": {
+        "scroll": 445,
+        "height": 445,
+        "medalsBottom": 512.890625,
+        "overlayBottom": 573
+      },
+      "allStages": true,
+      "clear": true,
+      "gameOver": true,
+      "retry": true,
+      "persistence": true
+    },
+    {
+      "file": "shonin-v3-public-webkit-landscape.json",
+      "version": "3.0.1",
+      "engine": "webkit",
+      "scenario": "landscape",
+      "input": "WebKit PointerEvent drag + native action tap",
+      "score": 131031,
+      "seconds": 101.64166666669362,
+      "hits": 0,
+      "resultLayout": {
+        "scroll": 245,
+        "height": 245,
+        "medalsBottom": 0,
+        "overlayBottom": 336
+      },
+      "allStages": true,
+      "clear": true,
+      "gameOver": true,
+      "retry": true,
+      "persistence": true
+    }
+  ],
+  "additionalChecks": {
+    "mouseFullRunVersion": "3.0.0",
+    "hardCompactFullRunVersion": "3.0.0",
+    "finalLayout": "shonin-v3-public-layouts.json",
+    "finalPerformance": "shonin-v3-public-performance.json",
+    "integrity": "shonin-v3-public-integrity.json",
+    "cacheUpgrade": "shonin-v3-public-cache-upgrade.json"
+  },
+  "physicalIPhoneTested": false
+}

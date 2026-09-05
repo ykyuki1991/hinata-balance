@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "3.0.1",
   "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
   "engine": "webkit",
   "name": "iphone",
@@ -14,6 +14,12 @@
     "scrollWidth": 390,
     "button": 640
   },
+  "resultLayout": {
+    "scroll": 445,
+    "height": 445,
+    "medalsBottom": 512.890625,
+    "overlayBottom": 573
+  },
   "covered": [
     "1:waves",
     "1:boss",
@@ -26,11 +32,11 @@
     "3:clear"
   ],
   "win": true,
-  "score": 124278,
-  "hits": 1,
-  "stamps": 61,
-  "closeKills": 45,
-  "seconds": 101.85833333336046,
+  "score": 101358,
+  "hits": 0,
+  "stamps": 62,
+  "closeKills": 39,
+  "seconds": 105.53333333336339,
   "log": [
     {
       "t": 0,
@@ -41,230 +47,200 @@
       "name": "受付ホール"
     },
     {
-      "t": 10.75,
+      "t": 10.26,
       "stage": 1,
       "type": "upgrade",
-      "score": 5265,
+      "score": 4965,
       "lives": 4,
       "id": "level",
       "text": "処理速度 UP / Lv.2"
     },
     {
-      "t": 12.52,
-      "stage": 1,
-      "type": "burst",
-      "score": 7595,
-      "lives": 4,
-      "x": 268.43418153576255,
-      "y": 230.02644384729265,
-      "cleared": 1
-    },
-    {
-      "t": 16.32,
+      "t": 18.02,
       "stage": 1,
       "type": "boss",
-      "score": 12950,
+      "score": 13245,
       "lives": 4,
       "name": "受付一斉配信",
       "hint": "突進を横にかわす。止まった瞬間が、承認の機会。"
     },
     {
-      "t": 16.32,
-      "stage": 1,
-      "type": "damage",
-      "score": 12950,
-      "lives": 3,
-      "x": 217.790848403652,
-      "y": 205.38552191013292,
-      "reason": "決裁装置に接触"
-    },
-    {
-      "t": 16.8,
+      "t": 18.5,
       "stage": 1,
       "type": "upgrade",
-      "score": 13670,
-      "lives": 3,
+      "score": 13785,
+      "lives": 4,
       "id": "level",
       "text": "処理速度 UP / Lv.3"
     },
     {
-      "t": 23.68,
+      "t": 25.45,
       "stage": 1,
       "type": "burst",
-      "score": 14890,
-      "lives": 3,
-      "x": 240.29820115193243,
-      "y": 370.6873127274556,
+      "score": 15365,
+      "lives": 4,
+      "x": 250.85637791802145,
+      "y": 355.5274718570708,
       "cleared": 5
     },
     {
-      "t": 30.4,
+      "t": 32.17,
       "stage": 1,
       "type": "burst",
-      "score": 15390,
-      "lives": 3,
-      "x": 240.61816856864027,
-      "y": 352.9621320728219,
+      "score": 15865,
+      "lives": 4,
+      "x": 246.01169131144556,
+      "y": 370.7947839212258,
       "cleared": 5
     },
     {
-      "t": 34.26,
+      "t": 35.97,
       "stage": 1,
       "type": "stageClear",
-      "score": 18890,
-      "lives": 3,
-      "perfect": false
+      "score": 20865,
+      "lives": 4,
+      "perfect": true
     },
     {
-      "t": 36.07,
+      "t": 37.77,
       "stage": 1,
       "type": "upgrade",
-      "score": 18890,
+      "score": 20865,
       "lives": 4,
       "id": "wide"
     },
     {
-      "t": 36.07,
+      "t": 37.77,
       "stage": 2,
       "type": "stage",
-      "score": 18890,
+      "score": 20865,
       "lives": 4,
       "name": "回覧機関室"
     },
     {
-      "t": 51.09,
+      "t": 49.32,
       "stage": 2,
       "type": "burst",
-      "score": 25655,
+      "score": 24110,
       "lives": 4,
-      "x": 333.36088790101235,
-      "y": 251.25289517750448,
-      "cleared": 0
+      "x": 116.62705447314957,
+      "y": 463.81126847476173,
+      "cleared": 1
     },
     {
-      "t": 51.56,
+      "t": 49.82,
       "stage": 2,
       "type": "upgrade",
-      "score": 26015,
+      "score": 25640,
       "lives": 4,
       "id": "level",
       "text": "処理速度 UP / Lv.4"
     },
     {
-      "t": 58.29,
+      "t": 58.31,
       "stage": 2,
       "type": "burst",
-      "score": 35975,
+      "score": 36570,
       "lives": 4,
-      "x": 243.28017609927846,
-      "y": 372.6402892026531,
-      "cleared": 1
+      "x": 228.65067368820462,
+      "y": 262.7362745992717,
+      "cleared": 0
     },
     {
-      "t": 59.52,
+      "t": 58.72,
       "stage": 2,
       "type": "boss",
-      "score": 37655,
+      "score": 37620,
       "lives": 4,
       "name": "差戻しループ",
       "hint": "光る中継器を処理して、回覧の輪をほどく。"
     },
     {
-      "t": 62.24,
+      "t": 62.75,
       "stage": 2,
       "type": "burst",
-      "score": 44315,
+      "score": 43905,
       "lives": 4,
-      "x": 278.869401672486,
-      "y": 230.5020212174189,
-      "cleared": 6
+      "x": 115.73426389110034,
+      "y": 339.38607269972715,
+      "cleared": 5
     },
     {
-      "t": 66,
+      "t": 67.5,
       "stage": 2,
       "type": "stageClear",
-      "score": 54215,
+      "score": 55250,
       "lives": 4,
       "perfect": true
     },
     {
-      "t": 67.81,
+      "t": 69.31,
       "stage": 2,
       "type": "upgrade",
-      "score": 54215,
+      "score": 55250,
       "lives": 4,
       "id": "charge"
     },
     {
-      "t": 67.81,
+      "t": 69.31,
       "stage": 3,
       "type": "stage",
-      "score": 54215,
+      "score": 55250,
       "lives": 4,
       "name": "月末決裁室"
     },
     {
-      "t": 78.87,
+      "t": 81.1,
       "stage": 3,
       "type": "burst",
-      "score": 68065,
+      "score": 60115,
       "lives": 4,
-      "x": 133.2570817890431,
-      "y": 157.77066672370407,
+      "x": 381.5299315232399,
+      "y": 249.26374719457147,
       "cleared": 1
     },
     {
-      "t": 85.11,
+      "t": 91.3,
       "stage": 3,
       "type": "burst",
-      "score": 80790,
+      "score": 72370,
       "lives": 4,
-      "x": 130.0294931467823,
-      "y": 159.65133067322392,
+      "x": 117.65025923421459,
+      "y": 433.0511383845671,
       "cleared": 1
     },
     {
-      "t": 89.18,
-      "stage": 3,
-      "type": "burst",
-      "score": 93065,
-      "lives": 4,
-      "x": 71.99762328797267,
-      "y": 290.14595039349183,
-      "cleared": 1
-    },
-    {
-      "t": 89.42,
+      "t": 93.1,
       "stage": 3,
       "type": "boss",
-      "score": 95090,
+      "score": 74050,
       "lives": 4,
       "name": "月末締め",
       "hint": "締切線の外へ。開いた承認口に近づく。"
     },
     {
-      "t": 94.94,
+      "t": 98.63,
       "stage": 3,
       "type": "burst",
-      "score": 99790,
+      "score": 77090,
       "lives": 4,
-      "x": 220.20342226442685,
-      "y": 355.80084912568907,
+      "x": 235.37708535158131,
+      "y": 352.1501014040913,
       "cleared": 4
     },
     {
-      "t": 100.05,
+      "t": 103.73,
       "stage": 3,
       "type": "stageClear",
-      "score": 111790,
+      "score": 89090,
       "lives": 4,
       "perfect": true
     },
     {
-      "t": 101.86,
+      "t": 105.53,
       "stage": 3,
       "type": "end",
-      "score": 124278,
+      "score": 101358,
       "lives": 4,
       "win": true,
       "reason": ""

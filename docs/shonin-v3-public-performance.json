@@ -3,17 +3,19 @@
   "results": [
     {
       "engine": "chromium",
+      "version": "3.0.1",
       "realClock": true,
       "elapsedSeconds": 14.15833333333317,
       "samples": 300,
-      "p95": 0.4000000059604645,
+      "p95": 0.5,
       "particles": 0,
       "maxHazards": 1
     },
     {
       "engine": "webkit",
+      "version": "3.0.1",
       "realClock": true,
-      "elapsedSeconds": 14.074999999999841,
+      "elapsedSeconds": 14.108333333333173,
       "samples": 300,
       "p95": 1,
       "particles": 0,
