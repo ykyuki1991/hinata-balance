@@ -1,0 +1,375 @@
+{
+  "version": "5.0.0",
+  "base": "http://127.0.0.1:5175/shonin-defense/index.html",
+  "engine": "chromium",
+  "name": "desktop",
+  "mode": "normal",
+  "route": "upper",
+  "input": "WASD movement + mouse aim/fire + Space/Shift",
+  "physicalIPhone": false,
+  "layout": {
+    "width": 1280,
+    "height": 900,
+    "fieldRatio": 1,
+    "scrollWidth": 1280,
+    "actionsBottom": 886
+  },
+  "resultLayout": {
+    "scroll": 900,
+    "height": 900,
+    "bottom": 625.390625
+  },
+  "covered": [
+    "0:course",
+    "choice:weapon",
+    "0:boss",
+    "0:clear",
+    "1:intro",
+    "1:course",
+    "choice:route",
+    "1:boss",
+    "1:clear",
+    "2:intro",
+    "2:course",
+    "2:boss",
+    "2:clear"
+  ],
+  "win": true,
+  "seconds": 127.8250000000478,
+  "score": 63864,
+  "hits": 2,
+  "routeHistory": [
+    {
+      "stage": 0,
+      "type": "weapon",
+      "option": "upper"
+    },
+    {
+      "stage": 1,
+      "type": "route",
+      "option": "upper"
+    }
+  ],
+  "reflections": 3,
+  "guards": 3,
+  "chargedShots": 5,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage"
+    },
+    {
+      "t": 5.78,
+      "stage": 1,
+      "type": "burst",
+      "x": 190.83333333333312,
+      "y": 300
+    },
+    {
+      "t": 11.13,
+      "stage": 1,
+      "type": "route",
+      "choice": "upper",
+      "kind": "weapon"
+    },
+    {
+      "t": 15.37,
+      "stage": 1,
+      "type": "burst",
+      "x": 187.45919405098613,
+      "y": 303.1231483134833
+    },
+    {
+      "t": 23.13,
+      "stage": 1,
+      "type": "chain",
+      "x": 588.0177777777906,
+      "y": 300,
+      "count": 0
+    },
+    {
+      "t": 30.93,
+      "stage": 1,
+      "type": "boss",
+      "name": "受付ゲート"
+    },
+    {
+      "t": 30.97,
+      "stage": 1,
+      "type": "burst",
+      "x": 181.17746534376357,
+      "y": 241.24367769701854
+    },
+    {
+      "t": 34.37,
+      "stage": 1,
+      "type": "charged",
+      "x": 195.43745209769213,
+      "y": 388.14837659278294
+    },
+    {
+      "t": 36.17,
+      "stage": 1,
+      "type": "burst",
+      "x": 195.43745209769213,
+      "y": 288.01164023899355
+    },
+    {
+      "t": 37.33,
+      "stage": 1,
+      "type": "stageClear"
+    },
+    {
+      "t": 39.84,
+      "stage": 2,
+      "type": "stage"
+    },
+    {
+      "t": 47.98,
+      "stage": 2,
+      "type": "flank"
+    },
+    {
+      "t": 48.01,
+      "stage": 2,
+      "type": "route",
+      "choice": "upper",
+      "kind": "route"
+    },
+    {
+      "t": 48.17,
+      "stage": 2,
+      "type": "flank"
+    },
+    {
+      "t": 48.35,
+      "stage": 2,
+      "type": "flank"
+    },
+    {
+      "t": 48.48,
+      "stage": 2,
+      "type": "flank"
+    },
+    {
+      "t": 48.59,
+      "stage": 2,
+      "type": "flank"
+    },
+    {
+      "t": 48.7,
+      "stage": 2,
+      "type": "flank"
+    },
+    {
+      "t": 55.02,
+      "stage": 2,
+      "type": "chain",
+      "x": 637.8666666666761,
+      "y": 200,
+      "count": 0
+    },
+    {
+      "t": 56.27,
+      "stage": 2,
+      "type": "charged",
+      "x": 187.156526322355,
+      "y": 390.7287209022643
+    },
+    {
+      "t": 59.22,
+      "stage": 2,
+      "type": "sync"
+    },
+    {
+      "t": 65.17,
+      "stage": 2,
+      "type": "chain",
+      "x": 562.0622222222407,
+      "y": 300,
+      "count": 0
+    },
+    {
+      "t": 65.97,
+      "stage": 2,
+      "type": "burst",
+      "x": 187.18813035746936,
+      "y": 335.216154333801
+    },
+    {
+      "t": 70.53,
+      "stage": 2,
+      "type": "boss",
+      "name": "回覧機関"
+    },
+    {
+      "t": 70.58,
+      "stage": 2,
+      "type": "burst",
+      "x": 188.89220014509453,
+      "y": 292.9307717204171
+    },
+    {
+      "t": 77.19,
+      "stage": 2,
+      "type": "damage",
+      "x": 188.89220014509453,
+      "y": 251.34591074825354,
+      "reason": "催促弾に被弾しました。"
+    },
+    {
+      "t": 78.43,
+      "stage": 2,
+      "type": "sync"
+    },
+    {
+      "t": 78.58,
+      "stage": 2,
+      "type": "burst",
+      "x": 188.89220014509453,
+      "y": 331.1559414876381
+    },
+    {
+      "t": 82.65,
+      "stage": 2,
+      "type": "stageClear"
+    },
+    {
+      "t": 85.16,
+      "stage": 3,
+      "type": "stage"
+    },
+    {
+      "t": 88.38,
+      "stage": 3,
+      "type": "chain",
+      "x": 703.502222222224,
+      "y": 300,
+      "count": 0
+    },
+    {
+      "t": 88.58,
+      "stage": 3,
+      "type": "charged",
+      "x": 190.83333333333312,
+      "y": 300
+    },
+    {
+      "t": 93.38,
+      "stage": 3,
+      "type": "burst",
+      "x": 192.3279351851988,
+      "y": 231.00000000004047
+    },
+    {
+      "t": 100.98,
+      "stage": 3,
+      "type": "chain",
+      "x": 487.2888888889023,
+      "y": 300,
+      "count": 0
+    },
+    {
+      "t": 105.85,
+      "stage": 3,
+      "type": "chain",
+      "x": 881.0311111111213,
+      "y": 381.0555816661381,
+      "count": 0
+    },
+    {
+      "t": 108.92,
+      "stage": 3,
+      "type": "boss",
+      "name": "月末締め"
+    },
+    {
+      "t": 113.47,
+      "stage": 3,
+      "type": "guard",
+      "x": 220.14844211192232,
+      "y": 301.4367704041193
+    },
+    {
+      "t": 113.61,
+      "stage": 3,
+      "type": "reflect",
+      "x": 286.88227390797834,
+      "y": 328.2620692959768
+    },
+    {
+      "t": 114.37,
+      "stage": 3,
+      "type": "burst",
+      "x": 220.14844211192232,
+      "y": 290.5281734994717
+    },
+    {
+      "t": 114.73,
+      "stage": 3,
+      "type": "charged",
+      "x": 220.14844211192232,
+      "y": 272.23994782350195
+    },
+    {
+      "t": 118.98,
+      "stage": 3,
+      "type": "guard",
+      "x": 220.14844211192232,
+      "y": 315.9113137276825
+    },
+    {
+      "t": 119.13,
+      "stage": 3,
+      "type": "reflect",
+      "x": 275.3862375303719,
+      "y": 271.06336825235456
+    },
+    {
+      "t": 120.23,
+      "stage": 3,
+      "type": "charged",
+      "x": 220.14844211192232,
+      "y": 327.06480144468867
+    },
+    {
+      "t": 122.18,
+      "stage": 3,
+      "type": "damage",
+      "x": 220.14844211192232,
+      "y": 327.06480144826446,
+      "reason": "催促弾に被弾しました。"
+    },
+    {
+      "t": 124.58,
+      "stage": 3,
+      "type": "guard",
+      "x": 220.14844211192232,
+      "y": 286.61772809540656
+    },
+    {
+      "t": 124.58,
+      "stage": 3,
+      "type": "reflect",
+      "x": 270.5579510147619,
+      "y": 327.5680628587067
+    },
+    {
+      "t": 125.32,
+      "stage": 3,
+      "type": "stageClear"
+    },
+    {
+      "t": 127.83,
+      "stage": 3,
+      "type": "end",
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "errors": []
+}
