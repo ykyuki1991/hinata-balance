@@ -1,0 +1,164 @@
+[
+  {
+    "width": 280,
+    "mode": "normal",
+    "strategy": "idle",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 26,
+    "hits": 4
+  },
+  {
+    "width": 280,
+    "mode": "normal",
+    "strategy": "sweep",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 79,
+    "hits": 2.3333333333333335
+  },
+  {
+    "width": 280,
+    "mode": "normal",
+    "strategy": "tactical",
+    "clears": 3,
+    "runs": 3,
+    "seconds": 118,
+    "hits": 0
+  },
+  {
+    "width": 280,
+    "mode": "hard",
+    "strategy": "idle",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 24,
+    "hits": 4
+  },
+  {
+    "width": 280,
+    "mode": "hard",
+    "strategy": "sweep",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 159,
+    "hits": 3
+  },
+  {
+    "width": 280,
+    "mode": "hard",
+    "strategy": "tactical",
+    "clears": 3,
+    "runs": 3,
+    "seconds": 130,
+    "hits": 0
+  },
+  {
+    "width": 360,
+    "mode": "normal",
+    "strategy": "idle",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 28,
+    "hits": 4
+  },
+  {
+    "width": 360,
+    "mode": "normal",
+    "strategy": "sweep",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 79,
+    "hits": 2.6666666666666665
+  },
+  {
+    "width": 360,
+    "mode": "normal",
+    "strategy": "tactical",
+    "clears": 3,
+    "runs": 3,
+    "seconds": 121,
+    "hits": 0
+  },
+  {
+    "width": 360,
+    "mode": "hard",
+    "strategy": "idle",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 25,
+    "hits": 4
+  },
+  {
+    "width": 360,
+    "mode": "hard",
+    "strategy": "sweep",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 158,
+    "hits": 2.6666666666666665
+  },
+  {
+    "width": 360,
+    "mode": "hard",
+    "strategy": "tactical",
+    "clears": 3,
+    "runs": 3,
+    "seconds": 132,
+    "hits": 0
+  },
+  {
+    "width": 800,
+    "mode": "normal",
+    "strategy": "idle",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 28,
+    "hits": 4
+  },
+  {
+    "width": 800,
+    "mode": "normal",
+    "strategy": "sweep",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 80,
+    "hits": 0.6666666666666666
+  },
+  {
+    "width": 800,
+    "mode": "normal",
+    "strategy": "tactical",
+    "clears": 3,
+    "runs": 3,
+    "seconds": 126,
+    "hits": 0
+  },
+  {
+    "width": 800,
+    "mode": "hard",
+    "strategy": "idle",
+    "clears": 0,
+    "runs": 3,
+    "seconds": 26,
+    "hits": 4
+  },
+  {
+    "width": 800,
+    "mode": "hard",
+    "strategy": "sweep",
+    "clears": 1,
+    "runs": 3,
+    "seconds": 200,
+    "hits": 1
+  },
+  {
+    "width": 800,
+    "mode": "hard",
+    "strategy": "tactical",
+    "clears": 3,
+    "runs": 3,
+    "seconds": 137,
+    "hits": 0
+  }
+]

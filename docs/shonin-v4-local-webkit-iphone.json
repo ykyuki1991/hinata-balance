@@ -1,0 +1,163 @@
+{
+  "version": "4.0.0",
+  "base": "http://127.0.0.1:5175/shonin-defense/index.html",
+  "engine": "webkit",
+  "name": "iphone",
+  "mode": "normal",
+  "input": "WebKit PointerEvent drag + native action tap",
+  "physicalIPhone": false,
+  "layout": {
+    "w": 390,
+    "h": 664,
+    "scrollWidth": 390,
+    "button": 0,
+    "fieldRatio": 1
+  },
+  "resultLayout": {
+    "scroll": 664,
+    "height": 664,
+    "bottom": 498.4375
+  },
+  "covered": [
+    "1:waves",
+    "1:boss",
+    "1:clear",
+    "2:intro",
+    "2:waves",
+    "2:boss",
+    "2:clear",
+    "3:intro",
+    "3:waves",
+    "3:boss",
+    "3:clear"
+  ],
+  "win": true,
+  "score": 102377,
+  "hits": 0,
+  "stamps": 78,
+  "fastKills": 65,
+  "cancelled": 52,
+  "seconds": 121.54166666670946,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage"
+    },
+    {
+      "t": 12.14,
+      "stage": 1,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 199.65779405727832
+    },
+    {
+      "t": 27.39,
+      "stage": 1,
+      "type": "boss",
+      "name": "受付集積機"
+    },
+    {
+      "t": 27.5,
+      "stage": 1,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 301.13243444879026
+    },
+    {
+      "t": 34.13,
+      "stage": 1,
+      "type": "stageClear"
+    },
+    {
+      "t": 36.74,
+      "stage": 2,
+      "type": "stage"
+    },
+    {
+      "t": 40.56,
+      "stage": 2,
+      "type": "route",
+      "choice": 1
+    },
+    {
+      "t": 50.21,
+      "stage": 2,
+      "type": "route",
+      "choice": 3
+    },
+    {
+      "t": 50.3,
+      "stage": 2,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 181.9246715729121
+    },
+    {
+      "t": 62.82,
+      "stage": 2,
+      "type": "boss",
+      "name": "並行審議機関"
+    },
+    {
+      "t": 62.89,
+      "stage": 2,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 178.67926357902596
+    },
+    {
+      "t": 73.69,
+      "stage": 2,
+      "type": "stageClear"
+    },
+    {
+      "t": 76.3,
+      "stage": 3,
+      "type": "stage"
+    },
+    {
+      "t": 82.09,
+      "stage": 3,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 298.7449603901587
+    },
+    {
+      "t": 87.68,
+      "stage": 3,
+      "type": "route",
+      "choice": 3
+    },
+    {
+      "t": 103.83,
+      "stage": 3,
+      "type": "boss",
+      "name": "月末締め"
+    },
+    {
+      "t": 103.93,
+      "stage": 3,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 398.10556013179274
+    },
+    {
+      "t": 118.93,
+      "stage": 3,
+      "type": "stageClear"
+    },
+    {
+      "t": 121.54,
+      "stage": 3,
+      "type": "end",
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "errors": [],
+  "network": []
+}

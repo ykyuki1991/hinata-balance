@@ -1,35 +1,30 @@
 # 承認防衛線 — 未処理、接近中。
 
-公開: https://ykyuki1991.github.io/hinata-balance/shonin-defense/
+v4.0.0 / FLOW BREAKER。公開先は https://ykyuki1991.github.io/hinata-balance/shonin-defense/ 。`public/shonin-defense/` を既存のViteビルドがコピーする独立した静的ゲーム。親のゲームとPWAの資産は変更しない。
 
-v3は全方向アリーナシューティング。完全架空の申請が四方から迫る。POWER EGGに着想を得た非公式作品で、実在UI・ロゴ・社員・データは使用しない。
+公式情報の調査と採否は [v4設計](shonin-v4-design.md) を参照。v1〜v3の文書は過去の記録。
 
-## 操作
+## 遊び
 
-- 電話: フィールドを押した位置からドラッグして全方向移動。離すと停止。近くの見通せる敵を自動照準・自動射撃。
-- PC: WASD / 矢印キー、またはマウスでドラッグ。
-- 差戻し: ボタン / Space。移動方向へ短い無敵移動＋近くへの反撃と弾の否認。移動していない場合は照準方向。
-- 停止: Ⅱ / P / Escape。非表示・フォーカスを失うと自動停止。
-- 音: 明示的な音ON操作で開始。合成BGM・SE、外部音源なし。
+右へ進む仕事の流れを撃ち開く横スクロール。ドラッグ・矢印・WASDで移動し、常時自動射撃。スペースまたは右下のボタンで2.5秒の貫通連射「一括承認」。押しっぱなしの移動と別の指のアクションを同時使用できる。
 
-受付ホール・回覧機関室・月末決裁室、各4遭遇＋ボス。決裁印を拾うと強化。中間で装備選択。再挑戦は同じ配置。通常/繁忙日の記録、クリア数、実績を端末に保存。旧版記録は消さず別キーで保持。
+3章：受付の集積 → 分岐・並行審議 → 決裁後の記録・共有。約2〜3分。ルートを選ぶゲートと、両方の処理を必要とするゲートを実際の敵として配置。逆流紙は折り返す。添付装甲は露出した部品を狙い、発生源を倒すと従属する紙と弾をまとめて消せる。
 
-## 構成
+通常弾で敵弾を消せる。撃破でゲージが戻り、14件ごとに随伴射撃が増える。早期処理で50%加点、10連続ごとに倍率上昇、最大5倍。コーヒーは6秒連射加速。被弾しても火力を失わない。各章クリアで1回復。棒立ちや逃げ回るだけでは処理が滞る。
 
-`public/shonin-defense/`の静的ES modules。`engine.js`が固定ステップのシミュレーション、`render.js`が描画、`game.js`が入力とUI、`audio.js`がWeb Audio。ワールド480×600、DPR上限2、敵24/弾70/粒子180/予告3の上限。
+ボスは受付の集積機、二経路の機関、月末の押印装置。部品を壊すと攻撃源が減る。月末は部品を壊すたび本体の残り3分の1を処理でき、複数部品を先に倒すことも可能。時間待ちの無敵フェーズなし。ボスの残り10秒は画面内に表示する。
 
-親VitePWAのプリキャッシュ対象からゲームを除外し、モジュールは版番号で更新。既存URLを維持する。診断は`?qa=1`で読み取り専用`gameSnapshot()`を公開し、通常URLには出さない。
+通常勤務と繁忙日で記録を分離。繁忙日は照準補助が狭く、編隊と発射方向の組合せが増える。同じシードでリトライでき、タイトルへ戻ると次の配置になる。端末内の記録は `shonin-defense-v4`。旧版の保存領域は保持するが、異なるゲームの得点を混ぜない。
 
-## 検証
+## 構成と検証
 
-- `npm test`, `npm run lint`, `VITE_BASE_PATH=/hinata-balance/ npm run build`
-- `node scripts/shonin-sim.mjs`: 2モード×4移動方針×6シード
-- `SCENARIO=desktop ENGINES=chromium node scripts/shonin-browser-check.mjs`: 全行程、失敗、リトライ、記録
-- `SCENARIO=iphone ENGINES=chromium ...`: ネイティブタッチドラッグと同時差戻し
-- `SCENARIO=iphone ENGINES=webkit ...`: WebKit入力・描画
-- `node scripts/shonin-layout-check.mjs`: PC、小型、縦横、回転
-- `node scripts/shonin-performance-check.mjs`: 実時計の描画時間
-- `node scripts/shonin-public-check.mjs`: 公開ファイル一致、親PWAとの共存、診断非表示
-- `node scripts/shonin-cache-check.mjs`: 旧版閲覧後の同じURLへの更新
+- `engine.js`: DOM非依存の固定刻みシミュレーション。
+- `render.js`: 紙・押印機・ルート・機関・書庫のオリジナルCanvas描画。画像ダウンロード不要。粒子上限160、敵20、敵弾は発射時18を目安に制限。
+- `game.js`: 入力、保存、全画面HUD、ポーズ、キャッシュ移行。通常URLにテスト用書込み口はない。`?qa=1` の読み取り専用スナップショットで検証。
+- `audio.js`: ユーザー操作後に開始するオリジナルWeb Audio音楽と効果音。
+- `scripts/shonin-browser-check.mjs`: 実ブラウザのキーボード・マウス・タッチで全章、ボス、クリア、死亡、リトライ、保存。
+- `scripts/shonin-layout-check.mjs`: Chrome/WebKitでPC・縦・横・小型端末、回転、フィールド占有率100%。
+- `scripts/shonin-performance-check.mjs`: 仮想時計を使わない描画負荷計測。
+- `scripts/shonin-public-check.mjs`: 公開ファイルとローカル内容の一致、親PWAとの共存、通常URLで診断APIを非公開。
 
-公開検証は`GAME_URL=https://ykyuki1991.github.io/hinata-balance/shonin-defense/`を指定。WebKitブラウザが必要。詳細な根拠・解釈・実機検証の限界は[再設計記録](shonin-v3-design.md)、走行ログは`shonin-v3-*.json`。
+物理iPhoneは使用していない。ChromeのネイティブCDPタッチと、WebKitのモバイル相当環境を区別して記録する。WebKitの連続ドラッグはPointerEventによる入力、開始・アクションはブラウザのタップAPI。エンジンの内部状態を変更してクリアするテストではない。
