@@ -1,0 +1,210 @@
+{
+  "version": "6.1.0",
+  "url": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "sourceCommit": "ee4673e57b62aeacc8f92e3ca68b541534d2d905",
+  "pagesRun": "https://github.com/ykyuki1991/hinata-balance/actions/runs/33986504878",
+  "deployment": "success",
+  "testsPassed": 29,
+  "validation": [
+    "lint",
+    "TypeScript",
+    "production build",
+    "48 balance conditions",
+    "8 public browser/viewport combinations",
+    "public asset integrity"
+  ],
+  "plays": [
+    {
+      "report": "chromium-desktop",
+      "version": "6.1.0",
+      "win": true,
+      "seconds": 137.20833333337288,
+      "input": "WASD only",
+      "covered": [
+        "0:course",
+        "0:boss",
+        "0:clear",
+        "1:intro",
+        "1:course",
+        "1:boss",
+        "1:clear",
+        "2:intro",
+        "2:course",
+        "2:boss",
+        "2:clear"
+      ],
+      "batches": 9,
+      "checks": {
+        "version": "6.1.0",
+        "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+        "engine": "chromium",
+        "name": "desktop",
+        "mode": "normal",
+        "path": "left",
+        "input": "WASD only",
+        "simultaneousTouches": 0,
+        "aimInput": false,
+        "fireInput": false,
+        "specialActionsDuringClear": 0,
+        "physicalIPhone": false,
+        "layout": {
+          "width": 1280,
+          "height": 900,
+          "scrollWidth": 1280,
+          "resultHeight": 900,
+          "homeBottom": 625.390625,
+          "fieldRatio": 1
+        },
+        "win": true,
+        "seconds": 137.20833333337288,
+        "score": 151200,
+        "hits": 0,
+        "routeHistory": [
+          {
+            "stage": 0,
+            "option": "left"
+          }
+        ],
+        "returned": 7,
+        "reapplied": 7,
+        "joined": 6,
+        "receipts": 39,
+        "retry": true,
+        "gameOver": true,
+        "persistence": true,
+        "holdResume": true,
+        "errors": []
+      }
+    },
+    {
+      "report": "chromium-iphone",
+      "version": "6.1.0",
+      "win": true,
+      "seconds": 134.13333333337567,
+      "input": "native CDP single touch",
+      "covered": [
+        "0:course",
+        "0:boss",
+        "0:clear",
+        "1:intro",
+        "1:course",
+        "1:boss",
+        "1:clear",
+        "2:intro",
+        "2:course",
+        "2:boss",
+        "2:clear"
+      ],
+      "batches": 7,
+      "checks": {
+        "version": "6.1.0",
+        "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+        "engine": "chromium",
+        "name": "iphone",
+        "mode": "normal",
+        "path": "right",
+        "input": "native CDP single touch",
+        "simultaneousTouches": 1,
+        "aimInput": false,
+        "fireInput": false,
+        "specialActionsDuringClear": 0,
+        "physicalIPhone": false,
+        "layout": {
+          "width": 390,
+          "height": 664,
+          "scrollWidth": 390,
+          "resultHeight": 664,
+          "homeBottom": 498.4375,
+          "fieldRatio": 1
+        },
+        "win": true,
+        "seconds": 134.13333333337567,
+        "score": 150793,
+        "hits": 0,
+        "routeHistory": [
+          {
+            "stage": 0,
+            "option": "right"
+          }
+        ],
+        "returned": 7,
+        "reapplied": 7,
+        "joined": 8,
+        "receipts": 39,
+        "retry": true,
+        "gameOver": true,
+        "persistence": true,
+        "holdResume": true,
+        "errors": []
+      }
+    },
+    {
+      "report": "webkit-landscape",
+      "version": "6.1.0",
+      "win": true,
+      "seconds": 138.16666666670534,
+      "input": "single PointerEvent touch in WebKit",
+      "covered": [
+        "0:course",
+        "0:boss",
+        "0:clear",
+        "1:intro",
+        "1:course",
+        "1:boss",
+        "1:clear",
+        "2:intro",
+        "2:course",
+        "2:boss",
+        "2:clear"
+      ],
+      "batches": 9,
+      "checks": {
+        "version": "6.1.0",
+        "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+        "engine": "webkit",
+        "name": "landscape",
+        "mode": "normal",
+        "path": "right",
+        "input": "single PointerEvent touch in WebKit",
+        "simultaneousTouches": 1,
+        "aimInput": false,
+        "fireInput": false,
+        "specialActionsDuringClear": 0,
+        "physicalIPhone": false,
+        "layout": {
+          "width": 750,
+          "height": 342,
+          "scrollWidth": 750,
+          "resultHeight": 342,
+          "homeBottom": 262,
+          "fieldRatio": 1
+        },
+        "win": true,
+        "seconds": 138.16666666670534,
+        "score": 151842,
+        "hits": 0,
+        "routeHistory": [
+          {
+            "stage": 0,
+            "option": "right"
+          }
+        ],
+        "returned": 7,
+        "reapplied": 7,
+        "joined": 8,
+        "receipts": 39,
+        "retry": true,
+        "gameOver": true,
+        "persistence": true,
+        "holdResume": true,
+        "errors": []
+      }
+    }
+  ],
+  "limitations": [
+    "No physical iPhone test",
+    "Automated browser inputs are not a human first-play usability study",
+    "Long-term enjoyment is not established",
+    "Public full plays use normal mode; hard mode assessed by local balance simulation"
+  ]
+}
