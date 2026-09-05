@@ -1,0 +1,2855 @@
+{
+  "version": "6.0.0",
+  "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "engine": "chromium",
+  "name": "desktop",
+  "mode": "normal",
+  "path": "left",
+  "input": "WASD only",
+  "simultaneousTouches": 0,
+  "aimInput": false,
+  "fireInput": false,
+  "specialActionsDuringClear": 0,
+  "physicalIPhone": false,
+  "layout": {
+    "width": 1280,
+    "height": 900,
+    "scrollWidth": 1280,
+    "resultHeight": 900,
+    "homeBottom": 625.390625,
+    "fieldRatio": 1
+  },
+  "covered": [
+    "0:course",
+    "0:boss",
+    "0:clear",
+    "1:intro",
+    "1:course",
+    "1:boss",
+    "1:clear",
+    "2:intro",
+    "2:course",
+    "2:boss",
+    "2:clear"
+  ],
+  "win": true,
+  "seconds": 153.11666666669174,
+  "score": 120224,
+  "hits": 0,
+  "routeHistory": [
+    {
+      "stage": 0,
+      "option": "left"
+    }
+  ],
+  "returned": 7,
+  "reapplied": 7,
+  "joined": 6,
+  "receipts": 39,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage"
+    },
+    {
+      "t": 1.72,
+      "stage": 1,
+      "type": "arrival",
+      "id": 1,
+      "kind": "request"
+    },
+    {
+      "t": 2.67,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 136.2916666666674
+    },
+    {
+      "t": 2.67,
+      "stage": 1,
+      "type": "approved",
+      "id": 1,
+      "job": 0
+    },
+    {
+      "t": 3.72,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 3.72,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 5.13,
+      "stage": 1,
+      "type": "arrival",
+      "id": 2,
+      "kind": "revision"
+    },
+    {
+      "t": 6.14,
+      "stage": 1,
+      "type": "return",
+      "id": 2,
+      "x": 196.26666666666668,
+      "y": 137.42500000000084
+    },
+    {
+      "t": 6.93,
+      "stage": 1,
+      "type": "arrival",
+      "id": 3,
+      "kind": "urgent"
+    },
+    {
+      "t": 8.2,
+      "stage": 1,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 153.1500000000003
+    },
+    {
+      "t": 8.2,
+      "stage": 1,
+      "type": "approved",
+      "id": 3,
+      "job": 0
+    },
+    {
+      "t": 8.6,
+      "stage": 1,
+      "type": "reapply",
+      "id": 2,
+      "x": 196.26666666666668,
+      "y": 120
+    },
+    {
+      "t": 9.26,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 9.26,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 10.16,
+      "stage": 1,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 146.49166666666835
+    },
+    {
+      "t": 10.16,
+      "stage": 1,
+      "type": "approved",
+      "id": 2,
+      "job": 0
+    },
+    {
+      "t": 10.34,
+      "stage": 1,
+      "type": "arrival",
+      "id": 4,
+      "kind": "request"
+    },
+    {
+      "t": 10.34,
+      "stage": 1,
+      "type": "arrival",
+      "id": 5,
+      "kind": "urgent"
+    },
+    {
+      "t": 11,
+      "stage": 1,
+      "type": "choice"
+    },
+    {
+      "t": 11.22,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 11.22,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 11.37,
+      "stage": 1,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 137.7083333333342
+    },
+    {
+      "t": 11.37,
+      "stage": 1,
+      "type": "approved",
+      "id": 4,
+      "job": 0
+    },
+    {
+      "t": 12.43,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 12.43,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 12.54,
+      "stage": 1,
+      "type": "warning",
+      "x": 657.0666666666667,
+      "y": 177.41666666666717
+    },
+    {
+      "t": 13,
+      "stage": 1,
+      "type": "route",
+      "option": "left"
+    },
+    {
+      "t": 13.75,
+      "stage": 1,
+      "type": "arrival",
+      "id": 6,
+      "kind": "request"
+    },
+    {
+      "t": 14.97,
+      "stage": 1,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 240.46666666666772
+    },
+    {
+      "t": 14.97,
+      "stage": 1,
+      "type": "approved",
+      "id": 5,
+      "job": 0
+    },
+    {
+      "t": 15.87,
+      "stage": 1,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 156.1250000000026
+    },
+    {
+      "t": 15.87,
+      "stage": 1,
+      "type": "approved",
+      "id": 6,
+      "job": 0
+    },
+    {
+      "t": 16.02,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 16.02,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 16.92,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 16.92,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 17.16,
+      "stage": 1,
+      "type": "arrival",
+      "id": 7,
+      "kind": "revision"
+    },
+    {
+      "t": 18.01,
+      "stage": 1,
+      "type": "return",
+      "id": 7,
+      "x": 426.6666666666667,
+      "y": 134.59166666666724
+    },
+    {
+      "t": 20.47,
+      "stage": 1,
+      "type": "reapply",
+      "id": 7,
+      "x": 426.6666666666667,
+      "y": 120
+    },
+    {
+      "t": 20.57,
+      "stage": 1,
+      "type": "arrival",
+      "id": 8,
+      "kind": "urgent"
+    },
+    {
+      "t": 20.57,
+      "stage": 1,
+      "type": "arrival",
+      "id": 9,
+      "kind": "urgent"
+    },
+    {
+      "t": 21.28,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 133.88333333333384
+    },
+    {
+      "t": 21.28,
+      "stage": 1,
+      "type": "approved",
+      "id": 7,
+      "job": 0
+    },
+    {
+      "t": 21.99,
+      "stage": 1,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 157.266666666667
+    },
+    {
+      "t": 21.99,
+      "stage": 1,
+      "type": "approved",
+      "id": 8,
+      "job": 0
+    },
+    {
+      "t": 22.34,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 22.34,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 22.77,
+      "stage": 1,
+      "type": "warning",
+      "x": 657.0666666666667,
+      "y": 177.41666666666717
+    },
+    {
+      "t": 23.05,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 23.05,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 23.97,
+      "stage": 1,
+      "type": "arrival",
+      "id": 10,
+      "kind": "request"
+    },
+    {
+      "t": 24.03,
+      "stage": 1,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 210.3500000000008
+    },
+    {
+      "t": 24.03,
+      "stage": 1,
+      "type": "approved",
+      "id": 9,
+      "job": 0
+    },
+    {
+      "t": 25.09,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 25.09,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 25.86,
+      "stage": 1,
+      "type": "stamp",
+      "x": 196.26666666666665,
+      "y": 152.15833333333555
+    },
+    {
+      "t": 25.86,
+      "stage": 1,
+      "type": "approved",
+      "id": 10,
+      "job": 0
+    },
+    {
+      "t": 26.92,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 26.92,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 29.01,
+      "stage": 1,
+      "type": "boss",
+      "name": "受付分岐"
+    },
+    {
+      "t": 29.51,
+      "stage": 1,
+      "type": "arrival",
+      "id": 11,
+      "kind": "request"
+    },
+    {
+      "t": 30.48,
+      "stage": 1,
+      "type": "stamp",
+      "x": 213.33333333333334,
+      "y": 136.71666666666744
+    },
+    {
+      "t": 30.48,
+      "stage": 1,
+      "type": "approved",
+      "id": 11,
+      "job": 0
+    },
+    {
+      "t": 31.54,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 31.54,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 33.12,
+      "stage": 1,
+      "type": "arrival",
+      "id": 12,
+      "kind": "revision"
+    },
+    {
+      "t": 34.12,
+      "stage": 1,
+      "type": "return",
+      "id": 12,
+      "x": 640,
+      "y": 137.28333333333416
+    },
+    {
+      "t": 36.58,
+      "stage": 1,
+      "type": "reapply",
+      "id": 12,
+      "x": 640,
+      "y": 120
+    },
+    {
+      "t": 36.72,
+      "stage": 1,
+      "type": "arrival",
+      "id": 13,
+      "kind": "urgent"
+    },
+    {
+      "t": 37.92,
+      "stage": 1,
+      "type": "stamp",
+      "x": 213.33333333333334,
+      "y": 151.41666666666694
+    },
+    {
+      "t": 37.92,
+      "stage": 1,
+      "type": "approved",
+      "id": 13,
+      "job": 0
+    },
+    {
+      "t": 38.98,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 38.98,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 39.48,
+      "stage": 1,
+      "type": "stamp",
+      "x": 640,
+      "y": 169.30000000000382
+    },
+    {
+      "t": 39.48,
+      "stage": 1,
+      "type": "approved",
+      "id": 12,
+      "job": 0
+    },
+    {
+      "t": 40.33,
+      "stage": 1,
+      "type": "arrival",
+      "id": 14,
+      "kind": "request"
+    },
+    {
+      "t": 40.54,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 40.54,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 41.4,
+      "stage": 1,
+      "type": "stamp",
+      "x": 640,
+      "y": 138.27500000000092
+    },
+    {
+      "t": 41.4,
+      "stage": 1,
+      "type": "approved",
+      "id": 14,
+      "job": 0
+    },
+    {
+      "t": 42.46,
+      "stage": 1,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 42.46,
+      "stage": 1,
+      "type": "delivered"
+    },
+    {
+      "t": 42.47,
+      "stage": 1,
+      "type": "stageClear"
+    },
+    {
+      "t": 44.67,
+      "stage": 2,
+      "type": "stage"
+    },
+    {
+      "t": 46.39,
+      "stage": 2,
+      "type": "arrival",
+      "id": 15,
+      "kind": "parallel"
+    },
+    {
+      "t": 47.22,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 134.30833333333388
+    },
+    {
+      "t": 47.22,
+      "stage": 2,
+      "type": "approved",
+      "id": 15,
+      "job": 0
+    },
+    {
+      "t": 48.28,
+      "stage": 2,
+      "type": "arrival",
+      "id": 16,
+      "kind": "review"
+    },
+    {
+      "t": 48.28,
+      "stage": 2,
+      "type": "arrival",
+      "id": 17,
+      "kind": "review"
+    },
+    {
+      "t": 48.28,
+      "stage": 2,
+      "type": "split",
+      "id": 15
+    },
+    {
+      "t": 49.42,
+      "stage": 2,
+      "type": "stamp",
+      "x": 213.33333333333334,
+      "y": 199.55000000000183
+    },
+    {
+      "t": 49.42,
+      "stage": 2,
+      "type": "approved",
+      "id": 16,
+      "job": 15
+    },
+    {
+      "t": 49.8,
+      "stage": 2,
+      "type": "arrival",
+      "id": 18,
+      "kind": "urgent"
+    },
+    {
+      "t": 50.48,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 15,
+      "id": 16
+    },
+    {
+      "t": 50.84,
+      "stage": 2,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 147.30000000000024
+    },
+    {
+      "t": 50.84,
+      "stage": 2,
+      "type": "approved",
+      "id": 18,
+      "job": 0
+    },
+    {
+      "t": 51.9,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 51.9,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 52.28,
+      "stage": 2,
+      "type": "warning",
+      "x": 640,
+      "y": 248.14166666667305
+    },
+    {
+      "t": 52.78,
+      "stage": 2,
+      "type": "stamp",
+      "x": 640,
+      "y": 256.6416666666737
+    },
+    {
+      "t": 52.78,
+      "stage": 2,
+      "type": "approved",
+      "id": 17,
+      "job": 15
+    },
+    {
+      "t": 53.21,
+      "stage": 2,
+      "type": "arrival",
+      "id": 19,
+      "kind": "revision"
+    },
+    {
+      "t": 53.84,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 15,
+      "id": 17
+    },
+    {
+      "t": 53.84,
+      "stage": 2,
+      "type": "join",
+      "job": 15,
+      "x": 426.6666666666667,
+      "y": 98
+    },
+    {
+      "t": 53.84,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 53.84,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 54.52,
+      "stage": 2,
+      "type": "return",
+      "id": 19,
+      "x": 196.26666666666665,
+      "y": 142.38333333333463
+    },
+    {
+      "t": 56.62,
+      "stage": 2,
+      "type": "arrival",
+      "id": 20,
+      "kind": "request"
+    },
+    {
+      "t": 56.62,
+      "stage": 2,
+      "type": "arrival",
+      "id": 21,
+      "kind": "urgent"
+    },
+    {
+      "t": 56.97,
+      "stage": 2,
+      "type": "reapply",
+      "id": 19,
+      "x": 196.26666666666665,
+      "y": 120
+    },
+    {
+      "t": 57.75,
+      "stage": 2,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 149.6833333333336
+    },
+    {
+      "t": 57.75,
+      "stage": 2,
+      "type": "approved",
+      "id": 21,
+      "job": 0
+    },
+    {
+      "t": 58.81,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 58.81,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 59.64,
+      "stage": 2,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 171.5666666666707
+    },
+    {
+      "t": 59.64,
+      "stage": 2,
+      "type": "approved",
+      "id": 20,
+      "job": 0
+    },
+    {
+      "t": 60.02,
+      "stage": 2,
+      "type": "arrival",
+      "id": 22,
+      "kind": "parallel"
+    },
+    {
+      "t": 60.38,
+      "stage": 2,
+      "type": "stamp",
+      "x": 196.26666666666665,
+      "y": 177.9416666666713
+    },
+    {
+      "t": 60.38,
+      "stage": 2,
+      "type": "approved",
+      "id": 19,
+      "job": 0
+    },
+    {
+      "t": 60.7,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 60.7,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 61.44,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 61.44,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 62.17,
+      "stage": 2,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 156.55000000000263
+    },
+    {
+      "t": 62.17,
+      "stage": 2,
+      "type": "approved",
+      "id": 22,
+      "job": 0
+    },
+    {
+      "t": 63.22,
+      "stage": 2,
+      "type": "arrival",
+      "id": 23,
+      "kind": "review"
+    },
+    {
+      "t": 63.22,
+      "stage": 2,
+      "type": "arrival",
+      "id": 24,
+      "kind": "review"
+    },
+    {
+      "t": 63.22,
+      "stage": 2,
+      "type": "split",
+      "id": 22
+    },
+    {
+      "t": 63.43,
+      "stage": 2,
+      "type": "arrival",
+      "id": 25,
+      "kind": "urgent"
+    },
+    {
+      "t": 64.46,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 146.8666666666669
+    },
+    {
+      "t": 64.46,
+      "stage": 2,
+      "type": "approved",
+      "id": 25,
+      "job": 0
+    },
+    {
+      "t": 65.49,
+      "stage": 2,
+      "type": "stamp",
+      "x": 213.33333333333334,
+      "y": 218.67500000000362
+    },
+    {
+      "t": 65.49,
+      "stage": 2,
+      "type": "approved",
+      "id": 23,
+      "job": 22
+    },
+    {
+      "t": 65.52,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 65.52,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 66.55,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 22,
+      "id": 23
+    },
+    {
+      "t": 66.84,
+      "stage": 2,
+      "type": "arrival",
+      "id": 26,
+      "kind": "parallel"
+    },
+    {
+      "t": 66.84,
+      "stage": 2,
+      "type": "arrival",
+      "id": 27,
+      "kind": "urgent"
+    },
+    {
+      "t": 67.22,
+      "stage": 2,
+      "type": "warning",
+      "x": 640,
+      "y": 248.14166666667305
+    },
+    {
+      "t": 67.36,
+      "stage": 2,
+      "type": "stamp",
+      "x": 640,
+      "y": 250.40833333333993
+    },
+    {
+      "t": 67.36,
+      "stage": 2,
+      "type": "approved",
+      "id": 24,
+      "job": 22
+    },
+    {
+      "t": 68.27,
+      "stage": 2,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 157.266666666667
+    },
+    {
+      "t": 68.27,
+      "stage": 2,
+      "type": "approved",
+      "id": 27,
+      "job": 0
+    },
+    {
+      "t": 68.42,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 22,
+      "id": 24
+    },
+    {
+      "t": 68.42,
+      "stage": 2,
+      "type": "join",
+      "job": 22,
+      "x": 426.6666666666667,
+      "y": 98
+    },
+    {
+      "t": 68.42,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 68.42,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 69.33,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 69.33,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 70.17,
+      "stage": 2,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 176.66666666667118
+    },
+    {
+      "t": 70.17,
+      "stage": 2,
+      "type": "approved",
+      "id": 26,
+      "job": 0
+    },
+    {
+      "t": 70.25,
+      "stage": 2,
+      "type": "arrival",
+      "id": 28,
+      "kind": "urgent"
+    },
+    {
+      "t": 71.23,
+      "stage": 2,
+      "type": "arrival",
+      "id": 29,
+      "kind": "review"
+    },
+    {
+      "t": 71.23,
+      "stage": 2,
+      "type": "arrival",
+      "id": 30,
+      "kind": "review"
+    },
+    {
+      "t": 71.23,
+      "stage": 2,
+      "type": "split",
+      "id": 26
+    },
+    {
+      "t": 71.35,
+      "stage": 2,
+      "type": "stamp",
+      "x": 196.26666666666665,
+      "y": 148.81666666666692
+    },
+    {
+      "t": 71.35,
+      "stage": 2,
+      "type": "approved",
+      "id": 28,
+      "job": 0
+    },
+    {
+      "t": 72.41,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 72.41,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 72.43,
+      "stage": 2,
+      "type": "stamp",
+      "x": 213.33333333333334,
+      "y": 200.5416666666686
+    },
+    {
+      "t": 72.43,
+      "stage": 2,
+      "type": "approved",
+      "id": 29,
+      "job": 26
+    },
+    {
+      "t": 73.48,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 26,
+      "id": 29
+    },
+    {
+      "t": 74.48,
+      "stage": 2,
+      "type": "stamp",
+      "x": 640,
+      "y": 235.39166666667185
+    },
+    {
+      "t": 74.48,
+      "stage": 2,
+      "type": "approved",
+      "id": 30,
+      "job": 26
+    },
+    {
+      "t": 75.53,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 26,
+      "id": 30
+    },
+    {
+      "t": 75.53,
+      "stage": 2,
+      "type": "join",
+      "job": 26,
+      "x": 426.6666666666667,
+      "y": 98
+    },
+    {
+      "t": 75.53,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 75.53,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 75.54,
+      "stage": 2,
+      "type": "boss",
+      "name": "並行審議"
+    },
+    {
+      "t": 76.04,
+      "stage": 2,
+      "type": "arrival",
+      "id": 31,
+      "kind": "parallel"
+    },
+    {
+      "t": 76.94,
+      "stage": 2,
+      "type": "stamp",
+      "x": 230.40000000000003,
+      "y": 135.44166666666732
+    },
+    {
+      "t": 76.94,
+      "stage": 2,
+      "type": "approved",
+      "id": 31,
+      "job": 0
+    },
+    {
+      "t": 78,
+      "stage": 2,
+      "type": "arrival",
+      "id": 32,
+      "kind": "review"
+    },
+    {
+      "t": 78,
+      "stage": 2,
+      "type": "arrival",
+      "id": 33,
+      "kind": "review"
+    },
+    {
+      "t": 78,
+      "stage": 2,
+      "type": "split",
+      "id": 31
+    },
+    {
+      "t": 79.32,
+      "stage": 2,
+      "type": "stamp",
+      "x": 213.33333333333334,
+      "y": 202.5250000000021
+    },
+    {
+      "t": 79.32,
+      "stage": 2,
+      "type": "approved",
+      "id": 32,
+      "job": 31
+    },
+    {
+      "t": 80.38,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 31,
+      "id": 32
+    },
+    {
+      "t": 81.04,
+      "stage": 2,
+      "type": "arrival",
+      "id": 34,
+      "kind": "parallel"
+    },
+    {
+      "t": 81.38,
+      "stage": 2,
+      "type": "stamp",
+      "x": 640,
+      "y": 237.51666666667205
+    },
+    {
+      "t": 81.38,
+      "stage": 2,
+      "type": "approved",
+      "id": 33,
+      "job": 31
+    },
+    {
+      "t": 82.28,
+      "stage": 2,
+      "type": "stamp",
+      "x": 622.9333333333334,
+      "y": 141.2500000000012
+    },
+    {
+      "t": 82.28,
+      "stage": 2,
+      "type": "approved",
+      "id": 34,
+      "job": 0
+    },
+    {
+      "t": 82.43,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 31,
+      "id": 33
+    },
+    {
+      "t": 82.43,
+      "stage": 2,
+      "type": "join",
+      "job": 31,
+      "x": 426.6666666666667,
+      "y": 98
+    },
+    {
+      "t": 82.43,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 82.43,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 83.34,
+      "stage": 2,
+      "type": "arrival",
+      "id": 35,
+      "kind": "review"
+    },
+    {
+      "t": 83.34,
+      "stage": 2,
+      "type": "arrival",
+      "id": 36,
+      "kind": "review"
+    },
+    {
+      "t": 83.34,
+      "stage": 2,
+      "type": "split",
+      "id": 34
+    },
+    {
+      "t": 84.5,
+      "stage": 2,
+      "type": "stamp",
+      "x": 213.33333333333334,
+      "y": 199.8333333333352
+    },
+    {
+      "t": 84.5,
+      "stage": 2,
+      "type": "approved",
+      "id": 35,
+      "job": 34
+    },
+    {
+      "t": 85.56,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 34,
+      "id": 35
+    },
+    {
+      "t": 86.04,
+      "stage": 2,
+      "type": "arrival",
+      "id": 37,
+      "kind": "parallel"
+    },
+    {
+      "t": 86.55,
+      "stage": 2,
+      "type": "stamp",
+      "x": 640,
+      "y": 234.68333333333845
+    },
+    {
+      "t": 86.55,
+      "stage": 2,
+      "type": "approved",
+      "id": 36,
+      "job": 34
+    },
+    {
+      "t": 87.61,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 34,
+      "id": 36
+    },
+    {
+      "t": 87.61,
+      "stage": 2,
+      "type": "join",
+      "job": 34,
+      "x": 426.6666666666667,
+      "y": 98
+    },
+    {
+      "t": 87.61,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 87.61,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 88.23,
+      "stage": 2,
+      "type": "stamp",
+      "x": 230.40000000000003,
+      "y": 157.25833333333603
+    },
+    {
+      "t": 88.23,
+      "stage": 2,
+      "type": "approved",
+      "id": 37,
+      "job": 0
+    },
+    {
+      "t": 89.28,
+      "stage": 2,
+      "type": "arrival",
+      "id": 38,
+      "kind": "review"
+    },
+    {
+      "t": 89.28,
+      "stage": 2,
+      "type": "arrival",
+      "id": 39,
+      "kind": "review"
+    },
+    {
+      "t": 89.28,
+      "stage": 2,
+      "type": "split",
+      "id": 37
+    },
+    {
+      "t": 90.44,
+      "stage": 2,
+      "type": "stamp",
+      "x": 213.33333333333334,
+      "y": 199.8333333333352
+    },
+    {
+      "t": 90.44,
+      "stage": 2,
+      "type": "approved",
+      "id": 38,
+      "job": 37
+    },
+    {
+      "t": 91.5,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 37,
+      "id": 38
+    },
+    {
+      "t": 92.31,
+      "stage": 2,
+      "type": "stamp",
+      "x": 640,
+      "y": 231.5666666666715
+    },
+    {
+      "t": 92.31,
+      "stage": 2,
+      "type": "approved",
+      "id": 39,
+      "job": 37
+    },
+    {
+      "t": 93.37,
+      "stage": 2,
+      "type": "branchApproved",
+      "job": 37,
+      "id": 39
+    },
+    {
+      "t": 93.37,
+      "stage": 2,
+      "type": "join",
+      "job": 37,
+      "x": 426.6666666666667,
+      "y": 98
+    },
+    {
+      "t": 93.37,
+      "stage": 2,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 93.37,
+      "stage": 2,
+      "type": "delivered"
+    },
+    {
+      "t": 93.38,
+      "stage": 2,
+      "type": "stageClear"
+    },
+    {
+      "t": 95.58,
+      "stage": 3,
+      "type": "stage"
+    },
+    {
+      "t": 97.3,
+      "stage": 3,
+      "type": "arrival",
+      "id": 43,
+      "kind": "request"
+    },
+    {
+      "t": 97.99,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 203.9000000000011
+    },
+    {
+      "t": 97.99,
+      "stage": 3,
+      "type": "approved",
+      "id": 43,
+      "job": 0
+    },
+    {
+      "t": 99.05,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 43
+    },
+    {
+      "t": 100.71,
+      "stage": 3,
+      "type": "arrival",
+      "id": 47,
+      "kind": "urgent"
+    },
+    {
+      "t": 101.62,
+      "stage": 3,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 215.83333333333354
+    },
+    {
+      "t": 101.62,
+      "stage": 3,
+      "type": "approved",
+      "id": 47,
+      "job": 0
+    },
+    {
+      "t": 102.68,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 47
+    },
+    {
+      "t": 102.92,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 102.93,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 102.93,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 102.93,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 103.93,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 103.93,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 103.93,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 103.93,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 104.12,
+      "stage": 3,
+      "type": "arrival",
+      "id": 51,
+      "kind": "revision"
+    },
+    {
+      "t": 104.13,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 104.13,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 104.13,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 104.38,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 104.38,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 104.38,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 104.91,
+      "stage": 3,
+      "type": "return",
+      "id": 51,
+      "x": 657.0666666666667,
+      "y": 205.60000000000127
+    },
+    {
+      "t": 106.18,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 106.18,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 106.18,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 106.18,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 106.63,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 106.63,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 106.63,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 107.37,
+      "stage": 3,
+      "type": "reapply",
+      "id": 51,
+      "x": 657.0666666666667,
+      "y": 192
+    },
+    {
+      "t": 107.53,
+      "stage": 3,
+      "type": "arrival",
+      "id": 52,
+      "kind": "request"
+    },
+    {
+      "t": 107.53,
+      "stage": 3,
+      "type": "arrival",
+      "id": 53,
+      "kind": "urgent"
+    },
+    {
+      "t": 108.7,
+      "stage": 3,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 222.76666666666694
+    },
+    {
+      "t": 108.7,
+      "stage": 3,
+      "type": "approved",
+      "id": 53,
+      "job": 0
+    },
+    {
+      "t": 109.08,
+      "stage": 3,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 221.18333333333607
+    },
+    {
+      "t": 109.08,
+      "stage": 3,
+      "type": "approved",
+      "id": 51,
+      "job": 0
+    },
+    {
+      "t": 109.76,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 53
+    },
+    {
+      "t": 110.14,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 51
+    },
+    {
+      "t": 110.8,
+      "stage": 3,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 247.8166666666719
+    },
+    {
+      "t": 110.8,
+      "stage": 3,
+      "type": "approved",
+      "id": 52,
+      "job": 0
+    },
+    {
+      "t": 110.93,
+      "stage": 3,
+      "type": "arrival",
+      "id": 60,
+      "kind": "urgent"
+    },
+    {
+      "t": 111.86,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 52
+    },
+    {
+      "t": 112.5,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 112.95,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 112.95,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 112.95,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 113.08,
+      "stage": 3,
+      "type": "stamp",
+      "x": 196.26666666666665,
+      "y": 247.9000000000005
+    },
+    {
+      "t": 113.08,
+      "stage": 3,
+      "type": "approved",
+      "id": 60,
+      "job": 0
+    },
+    {
+      "t": 113.4,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 113.4,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 113.4,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 113.85,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 113.85,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 113.85,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 114.13,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 60
+    },
+    {
+      "t": 114.34,
+      "stage": 3,
+      "type": "arrival",
+      "id": 67,
+      "kind": "request"
+    },
+    {
+      "t": 114.42,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 114.87,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 114.87,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 114.87,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 115.07,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 204.46666666666783
+    },
+    {
+      "t": 115.07,
+      "stage": 3,
+      "type": "approved",
+      "id": 67,
+      "job": 0
+    },
+    {
+      "t": 115.32,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 115.32,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 115.32,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 115.58,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 115.58,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 115.58,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 115.77,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 115.77,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 115.77,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 116.13,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 67
+    },
+    {
+      "t": 116.22,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 116.22,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 116.22,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 116.33,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 116.78,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 116.78,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 116.78,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 117.23,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 117.23,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 117.23,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 117.58,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 117.58,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 117.58,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 117.68,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 117.68,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 117.68,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 117.75,
+      "stage": 3,
+      "type": "arrival",
+      "id": 71,
+      "kind": "urgent"
+    },
+    {
+      "t": 117.75,
+      "stage": 3,
+      "type": "arrival",
+      "id": 72,
+      "kind": "urgent"
+    },
+    {
+      "t": 118.13,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 118.13,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 118.13,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 118.58,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 118.58,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 118.58,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 119.23,
+      "stage": 3,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 230.566666666667
+    },
+    {
+      "t": 119.23,
+      "stage": 3,
+      "type": "approved",
+      "id": 71,
+      "job": 0
+    },
+    {
+      "t": 119.95,
+      "stage": 3,
+      "type": "warning",
+      "x": 657.0666666666667,
+      "y": 249.41666666666717
+    },
+    {
+      "t": 120.15,
+      "stage": 3,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 254.61666666666721
+    },
+    {
+      "t": 120.15,
+      "stage": 3,
+      "type": "approved",
+      "id": 72,
+      "job": 0
+    },
+    {
+      "t": 120.28,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 71
+    },
+    {
+      "t": 121.16,
+      "stage": 3,
+      "type": "arrival",
+      "id": 76,
+      "kind": "revision"
+    },
+    {
+      "t": 121.21,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 72
+    },
+    {
+      "t": 122.47,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 122.92,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 122.92,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 122.92,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 123.37,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 123.37,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 123.37,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 123.63,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 123.82,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 123.82,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 123.82,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 124.08,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 124.08,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 124.08,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 124.53,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 124.53,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 124.53,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 124.58,
+      "stage": 3,
+      "type": "return",
+      "id": 76,
+      "x": 657.0666666666667,
+      "y": 250.36666666667213
+    },
+    {
+      "t": 125.92,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 126.37,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 126.37,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 126.37,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 126.82,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 126.82,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 126.82,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 127.04,
+      "stage": 3,
+      "type": "reapply",
+      "id": 76,
+      "x": 657.0666666666667,
+      "y": 192
+    },
+    {
+      "t": 128.09,
+      "stage": 3,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 209.85000000000167
+    },
+    {
+      "t": 128.09,
+      "stage": 3,
+      "type": "approved",
+      "id": 76,
+      "job": 0
+    },
+    {
+      "t": 129.15,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 76
+    },
+    {
+      "t": 132.05,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 132.5,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 132.5,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 132.5,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 133.06,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 133.51,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 133.51,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 133.51,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 134.54,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 134.99,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 134.99,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 134.99,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 135,
+      "stage": 3,
+      "type": "boss",
+      "name": "決裁後連携"
+    },
+    {
+      "t": 135.5,
+      "stage": 3,
+      "type": "arrival",
+      "id": 86,
+      "kind": "request"
+    },
+    {
+      "t": 136.33,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 206.166666666668
+    },
+    {
+      "t": 136.33,
+      "stage": 3,
+      "type": "approved",
+      "id": 86,
+      "job": 0
+    },
+    {
+      "t": 137.38,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 86
+    },
+    {
+      "t": 139.11,
+      "stage": 3,
+      "type": "arrival",
+      "id": 90,
+      "kind": "revision"
+    },
+    {
+      "t": 140.48,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 140.49,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 140.49,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 140.49,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 140.9,
+      "stage": 3,
+      "type": "return",
+      "id": 90,
+      "x": 196.26666666666668,
+      "y": 222.60000000000286
+    },
+    {
+      "t": 141.83,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 141.83,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 141.83,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 141.83,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 142.72,
+      "stage": 3,
+      "type": "arrival",
+      "id": 91,
+      "kind": "request"
+    },
+    {
+      "t": 143.36,
+      "stage": 3,
+      "type": "reapply",
+      "id": 90,
+      "x": 196.26666666666668,
+      "y": 192
+    },
+    {
+      "t": 143.55,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 143.56,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 143.56,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 143.56,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 143.98,
+      "stage": 3,
+      "type": "stamp",
+      "x": 657.0666666666667,
+      "y": 213.53333333333535
+    },
+    {
+      "t": 143.98,
+      "stage": 3,
+      "type": "approved",
+      "id": 91,
+      "job": 0
+    },
+    {
+      "t": 145.03,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 91
+    },
+    {
+      "t": 145.51,
+      "stage": 3,
+      "type": "stamp",
+      "x": 196.26666666666668,
+      "y": 228.55000000000342
+    },
+    {
+      "t": 145.51,
+      "stage": 3,
+      "type": "approved",
+      "id": 90,
+      "job": 0
+    },
+    {
+      "t": 146.48,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 146.48,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 146.48,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 146.57,
+      "stage": 3,
+      "type": "dispatch",
+      "id": 90
+    },
+    {
+      "t": 147.58,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 148.03,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 148.03,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 148.03,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 148.48,
+      "stage": 3,
+      "type": "receipt",
+      "port": 0,
+      "x": 162.13333333333335,
+      "y": 117
+    },
+    {
+      "t": 148.48,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 148.48,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 148.93,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 149.38,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 149.38,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 149.38,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 149.83,
+      "stage": 3,
+      "type": "receipt",
+      "port": 1,
+      "x": 426.6666666666667,
+      "y": 117
+    },
+    {
+      "t": 149.83,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 149.83,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 150.45,
+      "stage": 3,
+      "type": "portOpen",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 150.9,
+      "stage": 3,
+      "type": "receipt",
+      "port": 2,
+      "x": 691.2,
+      "y": 117
+    },
+    {
+      "t": 150.9,
+      "stage": 3,
+      "type": "stamp",
+      "x": 426.6666666666667,
+      "y": 80
+    },
+    {
+      "t": 150.9,
+      "stage": 3,
+      "type": "delivered"
+    },
+    {
+      "t": 150.91,
+      "stage": 3,
+      "type": "stageClear"
+    },
+    {
+      "t": 153.12,
+      "stage": 3,
+      "type": "end",
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "holdResume": true,
+  "errors": []
+}

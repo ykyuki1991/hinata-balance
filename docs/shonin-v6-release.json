@@ -1,0 +1,160 @@
+{
+  "version": "6.0.0",
+  "url": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "deployedCommit": "c7354e381030a3fbfd20a7eaf05a28024ac6ced4",
+  "pagesRun": "https://github.com/ykyuki1991/hinata-balance/actions/runs/33984122973",
+  "deployment": "success",
+  "checkedAt": "2026-09-05T18:31:31.583Z",
+  "unitTests": 25,
+  "lint": true,
+  "productionBuild": true,
+  "publicPlaythroughs": [
+    {
+      "engine": "chromium",
+      "name": "desktop",
+      "mode": "normal",
+      "input": "WASD only",
+      "simultaneousTouches": 0,
+      "aimInput": false,
+      "fireInput": false,
+      "specialActionsDuringClear": 0,
+      "seconds": 153.11666666669174,
+      "hits": 0,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "option": "left"
+        }
+      ],
+      "returned": 7,
+      "reapplied": 7,
+      "joined": 6,
+      "receipts": 39,
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true,
+      "holdResume": true
+    },
+    {
+      "engine": "chromium",
+      "name": "iphone",
+      "mode": "normal",
+      "input": "native CDP single touch",
+      "simultaneousTouches": 1,
+      "aimInput": false,
+      "fireInput": false,
+      "specialActionsDuringClear": 0,
+      "seconds": 154.5250000000238,
+      "hits": 0,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "option": "right"
+        }
+      ],
+      "returned": 7,
+      "reapplied": 7,
+      "joined": 8,
+      "receipts": 39,
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true,
+      "holdResume": true
+    },
+    {
+      "engine": "chromium",
+      "name": "small-phone",
+      "mode": "hard",
+      "input": "native CDP single touch",
+      "simultaneousTouches": 1,
+      "aimInput": false,
+      "fireInput": false,
+      "specialActionsDuringClear": 0,
+      "seconds": 153.37500000002484,
+      "hits": 0,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "option": "left"
+        }
+      ],
+      "returned": 9,
+      "reapplied": 9,
+      "joined": 6,
+      "receipts": 48,
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true,
+      "holdResume": true
+    },
+    {
+      "engine": "webkit",
+      "name": "iphone",
+      "mode": "normal",
+      "input": "single PointerEvent touch in WebKit",
+      "simultaneousTouches": 1,
+      "aimInput": false,
+      "fireInput": false,
+      "specialActionsDuringClear": 0,
+      "seconds": 154.3333333333573,
+      "hits": 0,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "option": "right"
+        }
+      ],
+      "returned": 7,
+      "reapplied": 7,
+      "joined": 8,
+      "receipts": 39,
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true,
+      "holdResume": true
+    },
+    {
+      "engine": "webkit",
+      "name": "landscape",
+      "mode": "normal",
+      "input": "single PointerEvent touch in WebKit",
+      "simultaneousTouches": 1,
+      "aimInput": false,
+      "fireInput": false,
+      "specialActionsDuringClear": 0,
+      "seconds": 156.73333333335512,
+      "hits": 1,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "option": "right"
+        }
+      ],
+      "returned": 7,
+      "reapplied": 7,
+      "joined": 8,
+      "receipts": 39,
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true,
+      "holdResume": true
+    }
+  ],
+  "evidence": [
+    "shonin-v6-public-cache-upgrade.json",
+    "shonin-v6-public-chromium-desktop.json",
+    "shonin-v6-public-chromium-iphone.json",
+    "shonin-v6-public-chromium-small-phone.json",
+    "shonin-v6-public-integrity.json",
+    "shonin-v6-public-layouts.json",
+    "shonin-v6-public-webkit-iphone.json",
+    "shonin-v6-public-webkit-landscape.json"
+  ],
+  "physicalIPhone": false,
+  "limitations": "Automated single-touch play on Mac Chrome/WebKit, with screenshots visually reviewed. No physical iPhone or human usability study."
+}
