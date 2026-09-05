@@ -1,4 +1,4 @@
-# 承認防衛線 — RE:WORK（v2.0.0）
+# 承認防衛線 — RE:WORK（v2.0.1）
 
 公開URLは維持: https://ykyuki1991.github.io/hinata-balance/shonin-defense/
 

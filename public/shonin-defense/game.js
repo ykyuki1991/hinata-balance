@@ -1,6 +1,6 @@
-import {Game,W,H,STAGES,UPGRADES,VERSION} from './engine.js?v=2.0.0';
-import {Renderer} from './render.js?v=2.0.0';
-import {AudioDirector} from './audio.js?v=2.0.0';
+import {Game,W,H,STAGES,UPGRADES,VERSION} from './engine.js?v=2.0.1';
+import {Renderer} from './render.js?v=2.0.1';
+import {AudioDirector} from './audio.js?v=2.0.1';
 const $=id=>document.getElementById(id);
 const canvas=$('game');
 const readCost=performance.now.bind(performance);
@@ -70,3 +70,18 @@ function frame(now){const wall=Math.min(.1,Math.max(0,(now-last)/1000||.016));la
 }
 requestAnimationFrame(frame);
 if(new URLSearchParams(location.search).has('qa'))window.gameSnapshot=()=>({...game.snapshot(),paused,records:JSON.parse(JSON.stringify(records)),performance:{samples:frameTimes.length,p95:frameTimes.toSorted((a,b)=>a-b)[Math.floor(frameTimes.length*.95)]||0,particles:renderer.particles.length,maxHazards:game.maxHazards},version:VERSION,world:{width:W,height:H}});
+// Refresh an inherited site worker without reloading an active game. The game
+// itself is not precached by the parent PWA, so future releases stay reachable.
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.getRegistration().then(async registration=>{
+    if(!registration)return;
+    const activate=()=>registration.waiting?.postMessage({type:'SKIP_WAITING'});
+    const observe=()=>{const worker=registration.installing;if(worker)worker.addEventListener('statechange',()=>{if(worker.state==='installed')activate();});};
+    registration.addEventListener('updatefound',observe);observe();
+    await registration.update();activate();
+  }).catch(()=>{});
+}
+// A versioned handoff escapes a previously cached index once, then keeps the
+// original public URL. Other parameters (including read-only QA) are preserved.
+const address=new URL(location.href);
+if(address.searchParams.get('v')===VERSION){address.searchParams.delete('v');history.replaceState(null,'',address.pathname+address.search+address.hash);}

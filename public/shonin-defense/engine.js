@@ -1,7 +1,7 @@
 // Approval Defense v2. Simulation runs in a fixed world on every device.
 export const W = 480;
 export const H = 720;
-export const VERSION = '2.0.0';
+export const VERSION = '2.0.1';
 export const STAGES = [
   {name:'朝の受付', sub:'MORNING INBOX', time:'09:00', color:'#c6f68d', boss:'回覧ルート', hint:'左右の承認印を壊すと、中央が開く。'},
   {name:'回覧経路', sub:'ROUTING NETWORK', time:'14:00', color:'#84dcf5', boss:'差戻しループ', hint:'予告された列を避けて、開いた窓を狙う。'},

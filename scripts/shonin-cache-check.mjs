@@ -1,0 +1,7 @@
+import {chromium} from '@playwright/test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+const root='https://ykyuki1991.github.io/hinata-balance/',base=root+'shonin-defense/';
+const context=await chromium.launchPersistentContext('.cache/shonin-v2-upgrade',{executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,viewport:{width:390,height:844}});
+try{const page=context.pages()[0];if(process.env.PRIME){await page.goto(root);await page.waitForFunction(async()=>!!(await navigator.serviceWorker.getRegistration())?.active);await page.goto(base);await page.locator('#start').waitFor();console.log({primed:true,footer:await page.locator('footer').textContent()});}
+else{await page.goto(base);const before=await page.locator('footer').textContent();await page.goto(base+'?v=2.0.1');await page.locator('#start').waitFor();await page.waitForFunction(async()=>!(await caches.match(location.origin+'/hinata-balance/shonin-defense/index.html')),{},{timeout:30000});await page.goto(base);await page.locator('#start').waitFor();const after=await page.locator('footer').textContent();assert.match(after,/2\.0\.1/);assert.equal(new URL(page.url()).search,'');const record={url:base,before,after,oldCacheRemoved:true,sameURL:true,checkedAt:new Date().toISOString()};await fs.writeFile('docs/shonin-v2-public-cache-upgrade.json',JSON.stringify(record,null,2));console.log(record);}}finally{await context.close();}

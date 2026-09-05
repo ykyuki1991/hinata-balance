@@ -10,7 +10,7 @@ export function decision(s,strategy='tactical'){
   if(strategy==='aim')return {x:target?.x??240,burst:s.energy>=100&&s.hazards.length>15};
   let best=-Infinity,bestX=s.x,riskAtCurrent=0;
   for(let x=24;x<=456;x+=8){let score=target?target.weight*Math.exp(-Math.pow((x-target.x)/35,2)):0;score-=Math.abs(x-s.x)*.003;
-    for(const b of s.hazards){if(b.kind==='beam'){if(Math.abs(x-b.x)<b.r+12)score-=100;continue;}if(b.vy<=0)continue;const hitTime=(s.y-b.y)/b.vy;if(hitTime<-.08||hitTime>2.1)continue;const hx=b.x+b.vx*hitTime;const reachable=s.x+Math.sign(x-s.x)*Math.min(Math.abs(x-s.x),490*Math.max(0,hitTime));const dist=Math.abs(hx-reachable);if(dist<44){const risk=42*Math.exp(-Math.pow(dist/(b.r+13),2))*(hitTime<.15?1.5:1);score-=risk;if(Math.abs(s.x-hx)<18&&hitTime<.45)riskAtCurrent++;}}
+    for(const b of s.hazards){if(b.kind==='beam'){if(Math.abs(x-b.x)<b.r+12)score-=100;if((s.x-b.x)*(x-b.x)<0&&Math.abs(s.x-b.x)>b.r+6)score-=120;continue;}if(b.vy<=0)continue;const hitTime=(s.y-b.y)/b.vy;if(hitTime<-.08||hitTime>2.1)continue;const hx=b.x+b.vx*hitTime;const reachable=s.x+Math.sign(x-s.x)*Math.min(Math.abs(x-s.x),490*Math.max(0,hitTime));const dist=Math.abs(hx-reachable);if(dist<44){const risk=42*Math.exp(-Math.pow(dist/(b.r+13),2))*(hitTime<.15?1.5:1);score-=risk;if(Math.abs(s.x-hx)<18&&hitTime<.45)riskAtCurrent++;}}
     for(const w of s.warnings){if(w.kind==='beam'&&Math.abs(x-w.x)<w.width/2+14)score-=70;}
     for(const item of s.items)if(item.y>s.y-150)score+=3*Math.exp(-Math.pow((x-item.x)/35,2));
     if(score>best){best=score;bestX=x;}
