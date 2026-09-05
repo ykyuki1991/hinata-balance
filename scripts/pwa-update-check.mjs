@@ -1,0 +1,17 @@
+import {chromium} from '@playwright/test';
+import fs from 'node:fs/promises';
+import http from 'node:http';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+const original=await fs.readFile('package.json','utf8');
+const root=path.resolve('.cache/update-check');await fs.mkdir(root,{recursive:true});await fs.cp('dist',root+'/old',{recursive:true});
+let browser,server;
+try{
+ const pkg=JSON.parse(original);pkg.version='1.1.1-update-check';await fs.writeFile('package.json',JSON.stringify(pkg,null,2));execFileSync(process.execPath,['node_modules/vite/bin/vite.js','build'],{env:{...process.env,VITE_BASE_PATH:'/hinata-balance/'},stdio:'pipe'});await fs.cp('dist',root+'/new',{recursive:true});await fs.writeFile('package.json',original);
+ let directory=root+'/old';const mime={'.js':'application/javascript','.css':'text/css','.html':'text/html','.webmanifest':'application/manifest+json','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml'};
+ server=http.createServer(async(req,res)=>{try{const pathname=new URL(req.url,'http://localhost').pathname;const relative=pathname.replace(/^\/hinata-balance\//,'');if(relative.includes('..'))throw Error();const file=path.join(directory,relative||'index.html');res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');res.setHeader('Cache-Control','no-cache');res.end(await fs.readFile(file));}catch{res.writeHead(404);res.end();}});await new Promise(r=>server.listen(4175,'127.0.0.1',r));
+ browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});const page=await context.newPage();const base='http://127.0.0.1:4175/hinata-balance/';await page.goto(base);await page.waitForFunction(()=>!!navigator.serviceWorker.controller);await page.evaluate(()=>localStorage.setItem('hinata-records',JSON.stringify({NORMAL:{plays:3,clears:1,max:10,best:40,bestScore:2000}})));await page.getByRole('button',{name:/NORMAL/}).click();directory=root+'/new';await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));await page.waitForFunction(async()=>!!(await navigator.serviceWorker.getRegistration())?.waiting,null,{timeout:20000});assert.equal(await page.locator('canvas').count(),1);
+ await page.getByRole('button',{name:'モード選択へ',exact:true}).click();await page.getByRole('button',{name:'モード選択へ戻る',exact:true}).click();await page.waitForEvent('load',{timeout:15000});await page.getByRole('button',{name:/SETTINGS/}).click();await page.getByText('v1.1.1-update-check',{exact:true}).waitFor();assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('hinata-records')).NORMAL.bestScore),2000);
+ await context.setOffline(true);await page.goto(base);await page.getByRole('button',{name:/SETTINGS/}).click();await page.getByText('v1.1.1-update-check',{exact:true}).waitFor();const result={old:'1.1.0',updated:'1.1.1-update-check',waitedUntilGameExit:true,automaticReload:true,recordsRetained:true,updatedOffline:true};console.log(result);await fs.writeFile('docs/pwa-update-check.json',JSON.stringify(result,null,2));
+}finally{await browser?.close();server?.close();await fs.writeFile('package.json',original);await fs.rm('dist',{recursive:true,force:true});await fs.cp(root+'/old','dist',{recursive:true});}

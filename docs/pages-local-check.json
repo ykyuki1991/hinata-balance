@@ -1,0 +1,9 @@
+{
+  "base": "http://127.0.0.1:4174/hinata-balance/",
+  "images": 27,
+  "touchAllModes": true,
+  "rotation": true,
+  "storage": true,
+  "offline": true,
+  "errors": []
+}

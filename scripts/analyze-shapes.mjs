@@ -1,0 +1,8 @@
+import {chromium} from '@playwright/test';import fs from 'node:fs/promises';
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+try{const page=await browser.newPage();await page.goto('http://127.0.0.1:5173');const results=await page.evaluate(async()=>{
+const {Game}=await import('/src/game/engine.ts');const {members}=await import('/src/data/members.ts');const {default:M}=await import('/node_modules/.vite/deps/matter-js.js');const results=[];
+for(const m of members){const hull=m.collisionShape;const centre=M.Vertices.centre(hull),bottom=Math.max(...hull.map(p=>p.y)),sole=hull.filter(p=>p.y>=bottom-2);const trials=[];
+for(const angle of [0,90,-90]){const g=new Game(document.createElement('canvas'),'NORMAL',[m],{bgm:false,se:false,vibration:false,names:false,guide:false},()=>{},()=>{});cancelAnimationFrame(g.raf);g.pos={x:195,y:485};g.angle=angle*Math.PI/180;g.drop();for(let i=0;i<720&&g.phase==='settling';i++)g.step(1/60);const b=g.pieces[0].body;trials.push({angle,finalAngle:b.angle*180/Math.PI,placed:g.count===1,time:g.seconds});g.dispose();}
+results.push({id:m.id,name:m.name,width:m.width,height:m.height,mass:m.mass,sole:Math.max(...sole.map(p=>p.x))-Math.min(...sole.map(p=>p.x)),centre:{x:centre.x+m.centerOfMassOffsetX,y:centre.y+m.centerOfMassOffsetY},asymmetry:Math.abs(centre.x-m.width/2)/m.width,area:M.Vertices.area(hull),trials});
+}return results;});await fs.writeFile('docs/piece-analysis.json',JSON.stringify(results,null,2));console.log(results.map(m=>({id:m.id,sole:+m.sole.toFixed(1),angles:m.trials.map(t=>+t.finalAngle.toFixed(1))})));}finally{await browser.close();}

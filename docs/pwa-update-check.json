@@ -1,0 +1,8 @@
+{
+  "old": "1.1.0",
+  "updated": "1.1.1-update-check",
+  "waitedUntilGameExit": true,
+  "automaticReload": true,
+  "recordsRetained": true,
+  "updatedOffline": true
+}
