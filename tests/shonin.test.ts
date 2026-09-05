@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {Game, H} from '../public/shonin-defense/engine.js';
+import {Game, H, COMBO_MEDAL} from '../public/shonin-defense/engine.js';
+import {decision} from '../scripts/shonin-controller.mjs';
 function advance(g:Game,sec:number){for(let i=0;i<sec*120;i++)g.update(1/120);}
 function live(){const g=new Game(42);g.start();advance(g,2.1);return g;}
 test('movement speed is bounded, shots automatic, retry restores the whole run',()=>{const g=live();g.setTarget(900);const old=g.x;g.update(.01);assert.equal(g.target,458);assert.ok(g.x-old<=4.91);advance(g,.3);assert.ok(g.bullets.length);g.weapon='wide';g.energy=0;g.lives=1;g.start();assert.equal(g.lives,4);assert.equal(g.weapon,'single');assert.equal(g.energy,100);assert.equal(g.stage,0);assert.equal(g.score,0);});
@@ -20,3 +21,5 @@ test('boss two rejects hits while closed and off its weak point',()=>{const g=li
 test('boss attacks always have readable warnings and a visible deadline',()=>{const g=live();g.stage=2;g.spawnBoss();g.boss.attack=0;g.bossUpdate(.01);assert.ok(g.warnings[0].left>=.9);assert.equal(g.hazards.length,0);g.bossTime=55;g.bossUpdate(.01);assert.equal(g.phase,'ended');assert.match(g.reason,/締切/);});
 test('the third boss ends the run after a clear beat, not an upgrade menu',()=>{const g=live();g.stage=2;g.spawnBoss();g.defeatBoss();advance(g,2.5);assert.equal(g.phase,'ended');assert.equal(g.win,true);assert.ok(g.score>0);});
 test('coffee and energy items work without lasting power loss on damage',()=>{const g=live();g.energy=10;g.items=[{x:g.x,y:g.y,type:'energy'},{x:g.x,y:g.y,type:'coffee'}];g.update(.01);assert.equal(g.energy,45);assert.equal(g.coffee,7);g.weapon='pierce';g.damage();assert.equal(g.weapon,'pierce');});
+
+test('a full normal run and its combo medal are reachable through public inputs',()=>{const g=new Game(1);g.start();let tick=0;while(g.phase!=='ended'&&tick<24000){if(g.phase==='upgrade')g.chooseUpgrade(g.stage===0?'pierce':'shield');if(tick%12===0){const d=decision(g.snapshot());g.setTarget(d.x);if(d.burst)g.burst();}g.update(1/120);g.events=[];tick++;}assert.equal(g.win,true);assert.ok(g.maxCombo>=COMBO_MEDAL);assert.ok(g.perfects>=8);assert.equal(g.stageScores.length,3);});

@@ -1,6 +1,6 @@
-import {Game,W,H,STAGES,UPGRADES,VERSION} from './engine.js?v=2.0.2';
-import {Renderer} from './render.js?v=2.0.2';
-import {AudioDirector} from './audio.js?v=2.0.2';
+import {Game,W,H,STAGES,UPGRADES,VERSION,COMBO_MEDAL} from './engine.js?v=2.0.3';
+import {Renderer} from './render.js?v=2.0.3';
+import {AudioDirector} from './audio.js?v=2.0.3';
 const $=id=>document.getElementById(id);
 const canvas=$('game');
 const readCost=performance.now.bind(performance);
@@ -15,7 +15,7 @@ let soundWanted=false;try{soundWanted=localStorage.getItem('shonin-defense-sound
 function soundUI(){$('sound').textContent=soundWanted?'音 ON':'音 OFF';$('sound').setAttribute('aria-pressed',String(soundWanted));$('sound').setAttribute('aria-label',soundWanted?'サウンドをオフにする':'サウンドをオンにする');}
 soundUI();
 $('sound').onclick=async()=>{soundWanted=!soundWanted;await audio.enable(soundWanted);try{localStorage.setItem('shonin-defense-sound',soundWanted?'on':'off');}catch{}soundUI();audio.effect('item');};
-const medals=[['clear','定時退勤'],['clean','無傷の勤務'],['combo','40連続承認'],['perfect','全件承認 ×8'],['hard','繁忙日突破']];
+const medals=[['clear','定時退勤'],['clean','無傷の勤務'],['combo',`${COMBO_MEDAL}連続承認`],['perfect','全件承認 ×8'],['hard','繁忙日突破']];
 function recordUI(){$('best').textContent=records[mode].toLocaleString();$('medals').replaceChildren(...medals.map(([id,name])=>{const el=document.createElement('span');el.textContent=name;el.className=records.medals.includes(id)?'earned':'';el.title=records.medals.includes(id)?'達成済み':'未達成';return el;}));}
 recordUI();
 function notice(text,seconds=1.7){$('announcement').textContent=text;$('announcement').classList.add('show');noticeLeft=seconds;}
@@ -46,7 +46,7 @@ function upgradeUI(){
 }
 function resultUI(){
   records.plays++;if(game.win)records.clears++;records[mode]=Math.max(records[mode],game.score);
-  const earned=[];if(game.win)earned.push('clear');if(game.win&&!game.hits)earned.push('clean');if(game.maxCombo>=40)earned.push('combo');if(game.perfects>=8)earned.push('perfect');if(game.win&&mode==='hard')earned.push('hard');records.medals=[...new Set([...records.medals,...earned])];save();recordUI();
+  const earned=[];if(game.win)earned.push('clear');if(game.win&&!game.hits)earned.push('clean');if(game.maxCombo>=COMBO_MEDAL)earned.push('combo');if(game.perfects>=8)earned.push('perfect');if(game.win&&mode==='hard')earned.push('hard');records.medals=[...new Set([...records.medals,...earned])];save();recordUI();
   const rank=!game.win?(game.stage===0?'D':'C'):game.score>=60000&&game.hits<=2?'S':game.score>=38000?'A':'B';
   $('overlay').className='overlay finished';$('overlay').hidden=false;$('overlay-title').textContent=game.win?'本日の業務、完了。':'未処理、持ち越し。';$('overlay-text').textContent=game.win?'朝から月末まで、おつかれさまでした。':game.reason;
   $('modes').hidden=true;$('upgrades').hidden=true;$('start').hidden=false;$('home').hidden=false;$('medals').hidden=false;$('best-wrap').hidden=false;$('result').hidden=false;

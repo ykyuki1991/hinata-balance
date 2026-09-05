@@ -1,0 +1,175 @@
+{
+  "engine": "webkit",
+  "name": "iphone",
+  "mode": "normal",
+  "weapon": "wide",
+  "utility": "charge",
+  "version": "2.0.1",
+  "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "layout": {
+    "w": 390,
+    "h": 844,
+    "scrollWidth": 390,
+    "button": 826
+  },
+  "covered": [
+    "1:waves",
+    "1:boss",
+    "1:clear",
+    "2:waves",
+    "2:boss",
+    "2:clear",
+    "3:waves",
+    "3:boss",
+    "3:clear"
+  ],
+  "win": true,
+  "score": 65003,
+  "hits": 1,
+  "seconds": 136.3083333333737,
+  "perfects": 17,
+  "performance": {
+    "samples": 300,
+    "p95": 185,
+    "particles": 0,
+    "maxHazards": 18
+  },
+  "log": [
+    {
+      "t": 0,
+      "type": "stage",
+      "stage": 1,
+      "score": 0,
+      "lives": 4,
+      "name": "朝の受付"
+    },
+    {
+      "t": 29.52,
+      "type": "boss",
+      "stage": 1,
+      "score": 14720,
+      "lives": 4,
+      "name": "回覧ルート",
+      "hint": "左右の承認印を壊すと、中央が開く。"
+    },
+    {
+      "t": 37.2,
+      "type": "burst",
+      "stage": 1,
+      "score": 15315,
+      "lives": 4,
+      "cleared": 17
+    },
+    {
+      "t": 40.16,
+      "type": "stageClear",
+      "stage": 1,
+      "score": 18935,
+      "lives": 4,
+      "perfect": true
+    },
+    {
+      "t": 42.57,
+      "type": "upgrade",
+      "stage": 1,
+      "score": 18935,
+      "lives": 4,
+      "id": "wide"
+    },
+    {
+      "t": 42.57,
+      "type": "stage",
+      "stage": 2,
+      "score": 18935,
+      "lives": 4,
+      "name": "回覧経路"
+    },
+    {
+      "t": 72.08,
+      "type": "boss",
+      "stage": 2,
+      "score": 34255,
+      "lives": 4,
+      "name": "差戻しループ",
+      "hint": "予告された列を避けて、開いた窓を狙う。"
+    },
+    {
+      "t": 82.05,
+      "type": "stageClear",
+      "stage": 2,
+      "score": 40816,
+      "lives": 4,
+      "perfect": true
+    },
+    {
+      "t": 82.05,
+      "type": "burst",
+      "stage": 2,
+      "score": 40816,
+      "lives": 4,
+      "cleared": 12
+    },
+    {
+      "t": 84.46,
+      "type": "upgrade",
+      "stage": 2,
+      "score": 40816,
+      "lives": 4,
+      "id": "charge"
+    },
+    {
+      "t": 84.46,
+      "type": "stage",
+      "stage": 3,
+      "score": 40816,
+      "lives": 4,
+      "name": "月末の夜"
+    },
+    {
+      "t": 109.72,
+      "type": "burst",
+      "stage": 3,
+      "score": 51361,
+      "lives": 4,
+      "cleared": 5
+    },
+    {
+      "t": 113.98,
+      "type": "boss",
+      "stage": 3,
+      "score": 51361,
+      "lives": 4,
+      "name": "月末締め",
+      "hint": "射線のすき間へ。締切レーザーは予告のあと。"
+    },
+    {
+      "t": 133.38,
+      "type": "damage",
+      "stage": 3,
+      "score": 51361,
+      "lives": 3,
+      "reason": "締切レーザー"
+    },
+    {
+      "t": 133.9,
+      "type": "stageClear",
+      "stage": 3,
+      "score": 59703,
+      "lives": 3,
+      "perfect": false
+    },
+    {
+      "t": 136.31,
+      "type": "end",
+      "stage": 3,
+      "score": 65003,
+      "lives": 3,
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOverTested": true,
+  "errors": [],
+  "network": []
+}

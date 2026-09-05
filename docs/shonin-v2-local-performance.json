@@ -1,0 +1,24 @@
+{
+  "base": "http://127.0.0.1:5175/shonin-defense/index.html",
+  "results": [
+    {
+      "engine": "chromium",
+      "realClock": true,
+      "elapsedSeconds": 14.124999999999838,
+      "samples": 300,
+      "p95": 0.4000000059604645,
+      "particles": 0,
+      "maxHazards": 1
+    },
+    {
+      "engine": "webkit",
+      "realClock": true,
+      "elapsedSeconds": 13.583333333333202,
+      "samples": 271,
+      "p95": 1,
+      "particles": 14,
+      "maxHazards": 0
+    }
+  ],
+  "physicalIPhone": false
+}

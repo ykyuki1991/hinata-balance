@@ -1,4 +1,4 @@
-import {W,H,STAGES} from './engine.js?v=2.0.2';
+import {W,H,STAGES} from './engine.js?v=2.0.3';
 const COLORS={normal:'#c6f68d',urgent:'#ffce7b',return:'#c4a6ff',relay:'#88dcf5'};
 export class Renderer {
   constructor(canvas,reduced=false){this.canvas=canvas;this.ctx=canvas.getContext('2d',{alpha:false});this.reduced=reduced;this.particles=[];this.labels=[];this.rings=[];this.shake=0;this.flash=0;this.backgrounds=STAGES.map((_,i)=>{const img=new Image();img.src=new URL(`./art/stage-${i+1}.svg`,import.meta.url).href;return img;});this.resize();}

@@ -1,0 +1,149 @@
+{
+  "base": "http://127.0.0.1:5175/shonin-defense/index.html",
+  "outputs": [
+    {
+      "engine": "chromium",
+      "name": "laptop",
+      "w": 1280,
+      "h": 720,
+      "wide": 1280,
+      "button": 665.5,
+      "start": 452.5,
+      "overlay": 445,
+      "started": true,
+      "performance": {
+        "samples": 180,
+        "p95": 0.30000000447034836,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "name": "iphone",
+      "w": 390,
+      "h": 844,
+      "wide": 390,
+      "button": 828,
+      "start": 573.890625,
+      "overlay": 631,
+      "started": true,
+      "performance": {
+        "samples": 177,
+        "p95": 0.29999999701976776,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "name": "compact",
+      "w": 320,
+      "h": 568,
+      "wide": 320,
+      "button": 552,
+      "start": 387,
+      "overlay": 355,
+      "started": true,
+      "performance": {
+        "samples": 155,
+        "p95": 0.29999999701976776,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "name": "landscape",
+      "w": 750,
+      "h": 342,
+      "wide": 750,
+      "button": 320,
+      "start": 266.890625,
+      "overlay": 184,
+      "started": true,
+      "performance": {
+        "samples": 163,
+        "p95": 0.29999999701976776,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "name": "laptop",
+      "w": 1280,
+      "h": 720,
+      "wide": 1280,
+      "button": 662.953125,
+      "start": 459.5,
+      "overlay": 445,
+      "started": true,
+      "performance": {
+        "samples": 176,
+        "p95": 1,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "name": "iphone",
+      "w": 390,
+      "h": 844,
+      "wide": 390,
+      "button": 826,
+      "start": 568.890625,
+      "overlay": 631,
+      "started": true,
+      "performance": {
+        "samples": 178,
+        "p95": 1,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "name": "compact",
+      "w": 320,
+      "h": 568,
+      "wide": 320,
+      "button": 550,
+      "start": 383,
+      "overlay": 355,
+      "started": true,
+      "performance": {
+        "samples": 149,
+        "p95": 1,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "name": "landscape",
+      "w": 750,
+      "h": 342,
+      "wide": 750,
+      "button": 317,
+      "start": 258.390625,
+      "overlay": 184,
+      "started": true,
+      "performance": {
+        "samples": 217,
+        "p95": 1,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    }
+  ]
+}
