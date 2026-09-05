@@ -7,7 +7,7 @@ import type {Mode} from '../src/types';
 const muted={bgm:false,se:false,vibration:false,names:false,guide:false};
 export type Strategy='A'|'B'|'C0'|'C';
 export function orderFor(seed:number,mode:Mode){const items=[...members];for(let i=items.length-1;i>0;i--){seed=(seed*1664525+1013904223)>>>0;const j=Math.floor(seed/4294967296*(i+1));[items[i],items[j]]=[items[j],items[i]];}return items.slice(0,targetFor(mode,items.length)).map(m=>m.id);}
-export function newGame(mode:Mode,order:string[]){return new Game(document.createElement('canvas'),mode,members,muted,()=>{},()=>{},order,true);}
+export function newGame(mode:Mode,order:string[]){const game=new Game(document.createElement('canvas'),mode,members,muted,()=>{},()=>{},order,true);game.debug=false;return game;}
 function copyBody(a:Matter.Body,b:Matter.Body){Matter.Body.setPosition(a,b.position);Matter.Body.setAngle(a,b.angle);Matter.Body.setVelocity(a,b.velocity);Matter.Body.setAngularVelocity(a,b.angularVelocity);}
 export function fork(g:Game){const c=newGame(g.mode,g.queue.map(m=>m.id));copyBody(c.platform,g.platform);c.count=g.count;c.seconds=g.seconds;c.score=g.score;c.perfects=g.perfects;c.tiltTotal=g.tiltTotal;c.tiltSamples=g.tiltSamples;c.maxTilt=g.maxTilt;c.bearingLoad=g.bearingLoad;c.camera=g.camera;
  for(const p of g.pieces){const q=createPiece(p.member,{x:0,y:0},p.body.angle);copyBody(q.body,p.body);q.body.friction=p.body.friction;q.body.frictionAir=p.body.frictionAir;Matter.Composite.add(c.engine.world,q.body);c.pieces.push(q);}return c;}

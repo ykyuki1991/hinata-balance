@@ -1,0 +1,9 @@
+{
+  "base": "https://ykyuki1991.github.io/hinata-balance/",
+  "images": 27,
+  "touchAllModes": true,
+  "rotation": true,
+  "storage": true,
+  "offline": true,
+  "errors": []
+}

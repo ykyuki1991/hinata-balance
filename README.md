@@ -1,6 +1,8 @@
 # ひなたバランス
 
-全身写真を積む非公式ファンゲーム。写真の権利は各権利者に帰属します。GitHub Pages向け公開準備版。公開リポジトリ作成は承認待ちです。
+全身写真を積む非公式ファンゲーム。写真の権利は各権利者に帰属します。
+
+**[ゲームを開く](https://ykyuki1991.github.io/hinata-balance/)** — iPhoneのSafariからも利用できます。
 
 ## 起動
 
@@ -32,7 +34,7 @@ Node.js 22以降で `npm ci` → `npm run dev`。本番版は `npm run build` �
 
 公開相当検証: `VITE_BASE_PATH=/hinata-balance/ npm run preview -- --port 4174` と `GAME_URL=http://127.0.0.1:4174/hinata-balance/ node scripts/pages-check.mjs`。公開後はGAME_URLを実URLに置換して再検証します。ローカル合格を公開URL合格とは扱いません。
 
-公開後はSafariのHTTPS URLから共有→ホーム画面に追加。standalone / portrait / safe-area対応。iPhone実機での確認は未実施です。
+Safariで上記URLを開き、共有→ホーム画面に追加。standalone / portrait / safe-area対応。公開HTTPS上でスマホ相当のタッチ操作とオフライン起動を確認済みです。iPhone実機での確認は未実施です。
 
 画像は480px高のWebP、内容ハッシュ付きファイル名。Workboxが変更ファイルと旧キャッシュを管理。起動・復帰・オンライン復帰・60秒ごとにSW更新を確認。ゲーム中は切替を延期し、終了またはホームへ戻ると反映します。記録はlocalStorageに保持。SETTINGSにバージョン表示。
 
@@ -47,5 +49,5 @@ Pillow・rembg[cpu]を入れた環境で `scripts/prepareBlogPhotos.py`、続い
 - 凸輪郭に簡略化するため袖・脚の間のくぼみはありません。
 - NEXTの有利さは小標本で一定ではなく、外部プレイヤー検証が必要です。
 - 実写真の全員クリアはNORMALで確認。HARD/ALLは途中までの実操作と、小矩形fixtureによる最終人数・保存処理テストを分けています。
-- iPhone実機・公開HTTPSでの動作は未確認。ローカルではスマホ相当タッチとPWAを検証。
+- 公開HTTPSでは27画像・3モードのタッチ操作・保存・オフラインPWAを検証。iPhone実機での操作とホーム画面追加は未確認。
 - 記録はブラウザごと。localhostの記録は公開先へ自動移行しません。ブラウザデータ削除で消える場合があります。
