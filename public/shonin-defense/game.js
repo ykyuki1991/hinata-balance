@@ -1,6 +1,6 @@
-import {Game,W,H,STAGES,UPGRADES,VERSION} from './engine.js?v=2.0.1';
-import {Renderer} from './render.js?v=2.0.1';
-import {AudioDirector} from './audio.js?v=2.0.1';
+import {Game,W,H,STAGES,UPGRADES,VERSION} from './engine.js?v=2.0.2';
+import {Renderer} from './render.js?v=2.0.2';
+import {AudioDirector} from './audio.js?v=2.0.2';
 const $=id=>document.getElementById(id);
 const canvas=$('game');
 const readCost=performance.now.bind(performance);
@@ -84,4 +84,16 @@ if('serviceWorker' in navigator){
 // A versioned handoff escapes a previously cached index once, then keeps the
 // original public URL. Other parameters (including read-only QA) are preserved.
 const address=new URL(location.href);
-if(address.searchParams.get('v')===VERSION){address.searchParams.delete('v');history.replaceState(null,'',address.pathname+address.search+address.hash);}
+if(address.searchParams.get('v')===VERSION){
+  const freshEntry=async()=>{
+    try{
+      const response=await fetch(address.pathname,{cache:'reload'});
+      if(!response.ok||!(await response.text()).includes(`v${VERSION}`))return;
+      address.searchParams.delete('v');
+      history.replaceState(null,'',address.pathname+address.search+address.hash);
+    }catch{}
+  };
+  // Also refresh the browser's HTTP cache, after any old precache worker retires.
+  navigator.serviceWorker?.addEventListener('controllerchange',freshEntry,{once:true});
+  freshEntry();
+}

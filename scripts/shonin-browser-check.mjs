@@ -22,7 +22,7 @@ for(const engine of (process.env.ENGINES||'chromium,webkit').split(',')){
     if((s.segment==='boss'&&s.bossTime>5||s.segment==='waves'&&s.stageT>14||s.segment==='clear')&&!screens.has(label)){screens.add(label);await page.screenshot({path:`.cache/shonin-v2/${isPublic?'public':'local'}-${engine}-${name}-${label}.png`});}
     const d=decision(s,'tactical'),box=await page.locator('#game').boundingBox();const point={x:box.x+d.x/480*box.width,y:box.y+box.height*.89};
     if(cdp){await cdp.send('Input.dispatchTouchEvent',{type:touchDown?'touchMove':'touchStart',touchPoints:[point]});touchDown=true;}else if(options.hasTouch)await page.touchscreen.tap(point.x,point.y);else await page.mouse.move(point.x,point.y);
-    if(d.burst&&await page.locator('#burst').isEnabled()){if(cdp&&touchDown){await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});touchDown=false;}if(options.hasTouch)await page.locator('#burst').tap();else await page.keyboard.press('Space');}
+    if(d.burst&&await page.locator('#burst').isEnabled()){if(cdp&&touchDown){await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});touchDown=false;}if(options.hasTouch){const bb=await page.locator('#burst').boundingBox();await page.touchscreen.tap(bb.x+bb.width/2,bb.y+bb.height/2);}else await page.keyboard.press('Space');}
     await page.clock.runFor(180);
   }
   if(cdp&&touchDown)await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
@@ -35,7 +35,7 @@ for(const engine of (process.env.ENGINES||'chromium,webkit').split(',')){
     assert.equal((await page.evaluate(()=>gameSnapshot())).win,false);await page.getByRole('heading',{name:'未処理、持ち越し。'}).waitFor();await page.screenshot({path:`.cache/shonin-v2/${isPublic?'public':'local'}-${engine}-${name}-gameover.png`});await page.locator('#start').click();await page.clock.runFor(100);assert.equal((await page.evaluate(()=>gameSnapshot())).lives,4);
   }
   await page.reload();assert.equal(Number((await page.locator('#best').innerText()).replaceAll(',','')),final.records.normal);assert.deepEqual(errors,[]);assert.deepEqual(network,[]);
-  outputs.push({engine,name,mode,weapon,utility,base,layout,covered:[...covered],win:final.win,score:final.score,hits:final.hits,seconds:final.t,perfects:final.perfects,performance:final.performance,log:final.log,retry:true,gameOverTested:['desktop','iphone'].includes(name),errors,network});await fs.writeFile(`docs/shonin-v2-${isPublic?'public':'local'}-${engine}-${name}.json`,JSON.stringify(outputs.at(-1),null,2));await ctx.close();
+  outputs.push({engine,name,mode,weapon,utility,version:final.version,base,layout,covered:[...covered],win:final.win,score:final.score,hits:final.hits,seconds:final.t,perfects:final.perfects,performance:final.performance,log:final.log,retry:true,gameOverTested:['desktop','iphone'].includes(name),errors,network});await fs.writeFile(`docs/shonin-v2-${isPublic?'public':'local'}-${engine}-${name}.json`,JSON.stringify(outputs.at(-1),null,2));await ctx.close();
  }}finally{await browser.close();}
 }
 console.log(JSON.stringify({completed:outputs.length,base,physicalIPhone:false}));
