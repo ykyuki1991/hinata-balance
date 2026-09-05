@@ -1,0 +1,78 @@
+{
+  "version": "4.0.0",
+  "url": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "sourceCommit": "656941323a19948ec06b97c299a6d743fde07ce4",
+  "pagesRun": "https://github.com/ykyuki1991/hinata-balance/actions/runs/33977228153",
+  "deployment": "success",
+  "checkedAt": "2026-09-05T16:26:44.744Z",
+  "tests": 26,
+  "testsPassed": 26,
+  "runs": [
+    {
+      "name": "chromium-desktop",
+      "input": "keyboard WASD + Space",
+      "mode": "normal",
+      "seconds": 126.15000000004646,
+      "score": 102758,
+      "allWavesAndBosses": true,
+      "fieldRatio": 1
+    },
+    {
+      "name": "chromium-desktop-mouse",
+      "input": "mouse drag",
+      "mode": "normal",
+      "seconds": 126.44166666671336,
+      "score": 102335,
+      "allWavesAndBosses": true,
+      "fieldRatio": 1
+    },
+    {
+      "name": "chromium-iphone",
+      "input": "native CDP touch drag + simultaneous action touch",
+      "mode": "normal",
+      "seconds": 118.78333333337393,
+      "score": 102257,
+      "allWavesAndBosses": true,
+      "fieldRatio": 1
+    },
+    {
+      "name": "chromium-small-phone",
+      "input": "native CDP touch drag + simultaneous action touch",
+      "mode": "hard",
+      "seconds": 122.25000000004336,
+      "score": 114590,
+      "allWavesAndBosses": true,
+      "fieldRatio": 1
+    },
+    {
+      "name": "webkit-iphone",
+      "input": "WebKit PointerEvent drag + native action tap",
+      "mode": "normal",
+      "seconds": 118.57500000004043,
+      "score": 101534,
+      "allWavesAndBosses": true,
+      "fieldRatio": 1
+    },
+    {
+      "name": "webkit-landscape",
+      "input": "WebKit PointerEvent drag + native action tap",
+      "mode": "normal",
+      "seconds": 126.4916666667134,
+      "score": 102411,
+      "allWavesAndBosses": true,
+      "fieldRatio": 1
+    }
+  ],
+  "sourceSHA256": {
+    "engine.js": "bb311aba9ad39327f807a885360241e14701afc96e21a79504de69241c0a1de3",
+    "game.js": "fe430fac36f8c685feff282d245ab09ff064d752d2704cd45928e2ad7c05674b",
+    "render.js": "9340b26cdf7ee44e7c75a39a323afbb772b81f6e1c8d5a0421a1020b53785fa5",
+    "style.css": "a80c7e66e3bdedade62eaa2ee230e7226816d116f1a3b80cfffd8de4957fd34d",
+    "audio.js": "547d6ca7a88d3f82bec8c8f49532be45b7427c504bb1d3b558344c9e2ff58f59",
+    "index.html": "1a51dd9ded9286955b5702a7524b122cde486397fb3993ced2cbc1e561bab716"
+  },
+  "publicIntegrity": true,
+  "oldCacheUpgrade": true,
+  "physicalIPhone": false,
+  "limitations": "Mobile browser emulation on macOS. Chrome uses native CDP touch; WebKit drag uses PointerEvents and native action taps. Physical iPhone was not available."
+}

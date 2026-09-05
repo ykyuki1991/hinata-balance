@@ -1,0 +1,21 @@
+{
+  "url": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "version": "4.0.0",
+  "checkedAt": "2026-09-05T16:15:46.549Z",
+  "publicFilesMatch": [
+    "index.html",
+    "style.css",
+    "engine.js",
+    "game.js",
+    "render.js",
+    "audio.js",
+    "icon.svg",
+    "art/stage-1.svg",
+    "art/stage-2.svg",
+    "art/stage-3.svg"
+  ],
+  "serviceWorkerCoexistence": true,
+  "diagnosticsHidden": true,
+  "imagesLoaded": true,
+  "physicalIPhone": false
+}

@@ -1,0 +1,185 @@
+{
+  "version": "4.0.0",
+  "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "engine": "chromium",
+  "name": "desktop",
+  "mode": "normal",
+  "input": "keyboard WASD + Space",
+  "physicalIPhone": false,
+  "layout": {
+    "w": 1440,
+    "h": 1100,
+    "scrollWidth": 1440,
+    "button": 0,
+    "fieldRatio": 1
+  },
+  "resultLayout": {
+    "scroll": 1100,
+    "height": 1100,
+    "bottom": 725.390625
+  },
+  "covered": [
+    "1:waves",
+    "1:wave-1",
+    "1:wave-2",
+    "1:wave-3",
+    "1:wave-4",
+    "1:wave-5",
+    "1:boss",
+    "1:clear",
+    "2:intro",
+    "2:waves",
+    "2:wave-1",
+    "2:wave-2",
+    "2:wave-3",
+    "2:wave-4",
+    "2:wave-5",
+    "2:boss",
+    "2:clear",
+    "3:intro",
+    "3:waves",
+    "3:wave-1",
+    "3:wave-2",
+    "3:wave-3",
+    "3:wave-4",
+    "3:wave-5",
+    "3:boss",
+    "3:clear"
+  ],
+  "win": true,
+  "score": 102758,
+  "hits": 0,
+  "stamps": 80,
+  "fastKills": 67,
+  "cancelled": 58,
+  "seconds": 126.15000000004646,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage"
+    },
+    {
+      "t": 12.73,
+      "stage": 1,
+      "type": "burst",
+      "x": 157.09090909090912,
+      "y": 227.29241108263466
+    },
+    {
+      "t": 28.47,
+      "stage": 1,
+      "type": "boss",
+      "name": "受付集積機"
+    },
+    {
+      "t": 28.57,
+      "stage": 1,
+      "type": "burst",
+      "x": 157.09090909090912,
+      "y": 288.86602619768684
+    },
+    {
+      "t": 36.96,
+      "stage": 1,
+      "type": "stageClear"
+    },
+    {
+      "t": 39.57,
+      "stage": 2,
+      "type": "stage"
+    },
+    {
+      "t": 42.96,
+      "stage": 2,
+      "type": "route",
+      "choice": 2
+    },
+    {
+      "t": 53.17,
+      "stage": 2,
+      "type": "route",
+      "choice": 3
+    },
+    {
+      "t": 53.17,
+      "stage": 2,
+      "type": "burst",
+      "x": 157.09090909090912,
+      "y": 174.69621660338055
+    },
+    {
+      "t": 65.62,
+      "stage": 2,
+      "type": "boss",
+      "name": "並行審議機関"
+    },
+    {
+      "t": 65.66,
+      "stage": 2,
+      "type": "burst",
+      "x": 157.09090909090912,
+      "y": 308.92798802448084
+    },
+    {
+      "t": 76.51,
+      "stage": 2,
+      "type": "stageClear"
+    },
+    {
+      "t": 79.12,
+      "stage": 3,
+      "type": "stage"
+    },
+    {
+      "t": 85.45,
+      "stage": 3,
+      "type": "burst",
+      "x": 157.09090909090912,
+      "y": 275.68722198601455
+    },
+    {
+      "t": 92.27,
+      "stage": 3,
+      "type": "route",
+      "choice": 3
+    },
+    {
+      "t": 108.82,
+      "stage": 3,
+      "type": "boss",
+      "name": "月末締め"
+    },
+    {
+      "t": 108.86,
+      "stage": 3,
+      "type": "burst",
+      "x": 157.09090909090912,
+      "y": 402.405225600297
+    },
+    {
+      "t": 123.02,
+      "stage": 3,
+      "type": "burst",
+      "x": 157.09090909090912,
+      "y": 260.57191982273963
+    },
+    {
+      "t": 123.54,
+      "stage": 3,
+      "type": "stageClear"
+    },
+    {
+      "t": 126.15,
+      "stage": 3,
+      "type": "end",
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "errors": [],
+  "network": []
+}
