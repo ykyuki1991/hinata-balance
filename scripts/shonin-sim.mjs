@@ -1,2 +1,15 @@
 import {Game} from '../public/shonin-defense/engine.js';
-for(const strategy of ['idle','follow','sweep']){let wins=0;let scores=[];let durations=[];for(let seed=1;seed<=20;seed++){let r=seed;const g=new Game(700,()=>{r=(r*1664525+1013904223)>>>0;return r/4294967296;});g.start();for(let i=0;i<5000&&g.phase==='playing';i++){if(strategy==='follow'){const target=g.enemies.filter(e=>e.y>0).sort((a,b)=>b.y-a.y)[0];if(target)g.setTarget(target.x);if((g.enemies.filter(e=>e.y>g.h*.45).length>=3)||g.enemies.some(e=>e.type==='boss'&&e.hp<20))g.burst();}if(strategy==='sweep'){g.setTarget(240+Math.sin(g.t*1.5)*190);if(g.t>20&&g.charges)g.burst();}g.update(1/60);g.events=[];}wins+=!!g.win;scores.push(g.score);durations.push(Math.round(g.t));}console.log({strategy,wins,scores,durations});}
+import {decision} from './shonin-controller.mjs';
+import fs from 'node:fs/promises';
+const results=[];
+for(const mode of ['normal','hard'])for(const strategy of ['idle','sweep','aim','tactical'])for(const seed of [1,997,8712,44677,998111,51234]){
+ const g=new Game(seed,mode);g.start();let tick=0;
+ while(g.t<260&&g.phase!=='ended'){
+  if(g.phase==='upgrade')g.chooseUpgrade(g.stage===0?'pierce':'shield');
+  if(tick++%12===0){const d=decision(g.snapshot(),strategy);g.setTarget(d.x);if(d.burst)g.burst();}
+  g.update(1/120);g.events=[];
+ }
+ results.push({mode,strategy,seed,win:g.win,stage:g.stage+1,t:+g.t.toFixed(1),score:g.score,hits:g.hits,kills:g.kills,perfects:g.perfects,reason:g.reason,maxHazards:g.maxHazards,log:g.log});
+}
+await fs.writeFile('docs/shonin-v2-balance.json',JSON.stringify(results,null,2));
+for(const mode of ['normal','hard'])for(const strategy of ['idle','sweep','aim','tactical']){const rs=results.filter(r=>r.mode===mode&&r.strategy===strategy);console.log({mode,strategy,wins:rs.filter(x=>x.win).length,score:rs.map(x=>x.score),stage:rs.map(x=>x.stage),time:rs.map(x=>x.t),reason:rs.map(x=>x.reason)});}

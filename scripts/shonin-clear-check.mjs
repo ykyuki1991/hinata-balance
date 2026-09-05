@@ -1,8 +1,4 @@
-import {chromium,devices} from '@playwright/test';
-import assert from 'node:assert/strict';
-import fs from 'node:fs/promises';
-const url=process.env.GAME_URL||'http://127.0.0.1:5174/shonin-defense/index.html';
-const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
-try{const context=await browser.newContext({...devices['iPhone 13']});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));await page.addInitScript(()=>{let seed=4;Math.random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};});await page.goto(url+'?qa=1');await page.clock.install();await page.locator('#start').tap();const b=await page.locator('canvas').boundingBox();const cdp=await context.newCDPSession(page);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:b.x+b.width/2,y:b.y+b.height*.8}]});
-for(let i=0;i<500;i++){const s=await page.evaluate(()=>gameSnapshot());if(s.phase!=='playing')break;const urgent=s.enemies.filter(e=>e.y>s.h*.53&&e.type!=='boss').sort((a,b)=>b.y-a.y)[0];const boss=s.enemies.find(e=>e.type==='boss');const target=urgent||boss||s.enemies.filter(e=>e.y>0).sort((a,b)=>b.y-a.y)[0];let x=target?.x??240;if(target?.type==='boss'){const flight=(s.h-74-target.y)/(510*s.h/620);x=240+Math.sin((s.t-52+flight)*1.25)*140;}await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:b.x+x/480*b.width,y:b.y+b.height*.8}]});if(s.charges&&(s.enemies.filter(e=>e.y>s.h*.38).length>=3||(boss&&boss.hp<20))){await page.locator('#burst').tap();}await page.clock.runFor(170);}
-await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});const final=await page.evaluate(()=>gameSnapshot());console.log(JSON.stringify(final));await page.screenshot({path:'.cache/shonin/public-clear.png'});assert.equal(final.win,true);await page.getByRole('heading',{name:'本日の業務、完了。'}).waitFor();await page.reload();assert.equal(Number((await page.locator('#best').innerText()).replaceAll(',','')),final.score);assert.deepEqual(errors,[]);await fs.writeFile('docs/shonin-clear-check.json',JSON.stringify({url,checkedAt:new Date().toISOString(),touchInput:true,win:true,score:final.score,seconds:final.t,kills:final.kills,bestPersisted:true,errors},null,2));}finally{await browser.close();}
+// A focused full run; use the same read-only controller and real input path as the matrix.
+process.env.SCENARIO ||= 'desktop';
+process.env.ENGINES ||= 'chromium';
+await import('./shonin-browser-check.mjs');
