@@ -1,0 +1,238 @@
+{
+  "version": "3.0.0",
+  "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "engine": "chromium",
+  "name": "desktop",
+  "mode": "normal",
+  "weapon": "pierce",
+  "utility": "shield",
+  "input": "mouse drag",
+  "physicalIPhone": false,
+  "layout": {
+    "w": 1440,
+    "h": 1100,
+    "scrollWidth": 1440,
+    "button": 866.5
+  },
+  "covered": [
+    "1:waves",
+    "1:boss",
+    "1:clear",
+    "2:waves",
+    "2:boss",
+    "2:clear",
+    "3:waves",
+    "3:boss",
+    "3:clear"
+  ],
+  "win": true,
+  "score": 126356,
+  "hits": 0,
+  "stamps": 63,
+  "closeKills": 38,
+  "seconds": 104.40000000002915,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage",
+      "score": 0,
+      "lives": 4,
+      "name": "受付ホール"
+    },
+    {
+      "t": 10.26,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 4965,
+      "lives": 4,
+      "id": "level",
+      "text": "処理速度 UP / Lv.2"
+    },
+    {
+      "t": 18.02,
+      "stage": 1,
+      "type": "boss",
+      "score": 13245,
+      "lives": 4,
+      "name": "受付一斉配信",
+      "hint": "突進を横にかわす。止まった瞬間が、承認の機会。"
+    },
+    {
+      "t": 18.5,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 13785,
+      "lives": 4,
+      "id": "level",
+      "text": "処理速度 UP / Lv.3"
+    },
+    {
+      "t": 25.57,
+      "stage": 1,
+      "type": "burst",
+      "score": 15365,
+      "lives": 4,
+      "x": 258.6824358218275,
+      "y": 354.4002561156378,
+      "cleared": 5
+    },
+    {
+      "t": 35.97,
+      "stage": 1,
+      "type": "stageClear",
+      "score": 20365,
+      "lives": 4,
+      "perfect": true
+    },
+    {
+      "t": 37.77,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 20365,
+      "lives": 4,
+      "id": "pierce"
+    },
+    {
+      "t": 37.77,
+      "stage": 2,
+      "type": "stage",
+      "score": 20365,
+      "lives": 4,
+      "name": "回覧機関室"
+    },
+    {
+      "t": 49.18,
+      "stage": 2,
+      "type": "burst",
+      "score": 23580,
+      "lives": 4,
+      "x": 132.6166101665895,
+      "y": 451.65799202370215,
+      "cleared": 1
+    },
+    {
+      "t": 50.82,
+      "stage": 2,
+      "type": "upgrade",
+      "score": 25320,
+      "lives": 4,
+      "id": "level",
+      "text": "処理速度 UP / Lv.4"
+    },
+    {
+      "t": 59.33,
+      "stage": 2,
+      "type": "boss",
+      "score": 36930,
+      "lives": 4,
+      "name": "差戻しループ",
+      "hint": "光る中継器を処理して、回覧の輪をほどく。"
+    },
+    {
+      "t": 62.52,
+      "stage": 2,
+      "type": "burst",
+      "score": 44890,
+      "lives": 4,
+      "x": 140.01492945498643,
+      "y": 333.67819760391063,
+      "cleared": 4
+    },
+    {
+      "t": 65.21,
+      "stage": 2,
+      "type": "stageClear",
+      "score": 53390,
+      "lives": 4,
+      "perfect": true
+    },
+    {
+      "t": 67.02,
+      "stage": 2,
+      "type": "upgrade",
+      "score": 53390,
+      "lives": 4,
+      "id": "shield"
+    },
+    {
+      "t": 67.02,
+      "stage": 3,
+      "type": "stage",
+      "score": 53390,
+      "lives": 4,
+      "name": "月末決裁室"
+    },
+    {
+      "t": 77.72,
+      "stage": 3,
+      "type": "burst",
+      "score": 70070,
+      "lives": 4,
+      "x": 315.33706936545485,
+      "y": 416.7476005217937,
+      "cleared": 0
+    },
+    {
+      "t": 82.15,
+      "stage": 3,
+      "type": "burst",
+      "score": 84620,
+      "lives": 4,
+      "x": 336.74749373310027,
+      "y": 460.383593946911,
+      "cleared": 0
+    },
+    {
+      "t": 85.38,
+      "stage": 3,
+      "type": "boss",
+      "score": 95495,
+      "lives": 4,
+      "name": "月末締め",
+      "hint": "締切線の外へ。開いた承認口に近づく。"
+    },
+    {
+      "t": 92.6,
+      "stage": 3,
+      "type": "burst",
+      "score": 101495,
+      "lives": 4,
+      "x": 175.99031876968064,
+      "y": 239.4830134273346,
+      "cleared": 3
+    },
+    {
+      "t": 99.68,
+      "stage": 3,
+      "type": "burst",
+      "score": 102020,
+      "lives": 4,
+      "x": 230.33136157242433,
+      "y": 328.1624331379919,
+      "cleared": 5
+    },
+    {
+      "t": 102.59,
+      "stage": 3,
+      "type": "stageClear",
+      "score": 114020,
+      "lives": 4,
+      "perfect": true
+    },
+    {
+      "t": 104.4,
+      "stage": 3,
+      "type": "end",
+      "score": 126356,
+      "lives": 4,
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "errors": [],
+  "network": []
+}

@@ -1,5 +1,5 @@
 // Deterministic, input-driven arena simulation. Rendering never changes combat.
-export const W=480,H=600,VERSION='3.0.0';
+export const W=480,H=600,VERSION='3.0.1';
 export const STAGES=[
  {name:'受付ホール',sub:'THE INBOX',time:'09:00',color:'#b5f78c',boss:'受付一斉配信',hint:'突進を横にかわす。止まった瞬間が、承認の機会。',note:'未処理は、四方から。'},
  {name:'回覧機関室',sub:'THE ROUTING ENGINE',time:'14:00',color:'#80def2',boss:'差戻しループ',hint:'光る中継器を処理して、回覧の輪をほどく。',note:'回覧元から、止めましょう。'},

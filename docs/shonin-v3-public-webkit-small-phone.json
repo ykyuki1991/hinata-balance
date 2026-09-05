@@ -1,0 +1,278 @@
+{
+  "version": "3.0.0",
+  "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "engine": "webkit",
+  "name": "small-phone",
+  "mode": "hard",
+  "weapon": "pierce",
+  "utility": "shield",
+  "input": "WebKit PointerEvent drag + native action tap",
+  "physicalIPhone": false,
+  "layout": {
+    "w": 320,
+    "h": 568,
+    "scrollWidth": 320,
+    "button": 548
+  },
+  "covered": [
+    "1:waves",
+    "1:boss",
+    "1:clear",
+    "2:waves",
+    "2:boss",
+    "2:clear",
+    "3:waves",
+    "3:boss",
+    "3:clear"
+  ],
+  "win": true,
+  "score": 101158,
+  "hits": 3,
+  "stamps": 72,
+  "closeKills": 49,
+  "seconds": 109.11666666669957,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage",
+      "score": 0,
+      "lives": 4,
+      "name": "受付ホール"
+    },
+    {
+      "t": 10.33,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 5265,
+      "lives": 4,
+      "id": "level",
+      "text": "処理速度 UP / Lv.2"
+    },
+    {
+      "t": 12.4,
+      "stage": 1,
+      "type": "burst",
+      "score": 8045,
+      "lives": 4,
+      "x": 316.97776560685037,
+      "y": 420.51203622994757,
+      "cleared": 1
+    },
+    {
+      "t": 13.72,
+      "stage": 1,
+      "type": "damage",
+      "score": 9035,
+      "lives": 3,
+      "x": 404.7027600975099,
+      "y": 300.8700918989391,
+      "reason": "未処理に接触"
+    },
+    {
+      "t": 17.41,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 13235,
+      "lives": 3,
+      "id": "level",
+      "text": "処理速度 UP / Lv.3"
+    },
+    {
+      "t": 17.62,
+      "stage": 1,
+      "type": "boss",
+      "score": 13535,
+      "lives": 3,
+      "name": "受付一斉配信",
+      "hint": "突進を横にかわす。止まった瞬間が、承認の機会。"
+    },
+    {
+      "t": 17.62,
+      "stage": 1,
+      "type": "damage",
+      "score": 13535,
+      "lives": 2,
+      "x": 230.0805640342354,
+      "y": 193.32957133284955,
+      "reason": "決裁装置に接触"
+    },
+    {
+      "t": 25.12,
+      "stage": 1,
+      "type": "burst",
+      "score": 14935,
+      "lives": 2,
+      "x": 240.0442332385131,
+      "y": 359.84596736192225,
+      "cleared": 5
+    },
+    {
+      "t": 31.84,
+      "stage": 1,
+      "type": "burst",
+      "score": 15435,
+      "lives": 2,
+      "x": 233.27144104483781,
+      "y": 370.85247949628416,
+      "cleared": 5
+    },
+    {
+      "t": 35.57,
+      "stage": 1,
+      "type": "stageClear",
+      "score": 18935,
+      "lives": 2,
+      "perfect": false
+    },
+    {
+      "t": 37.37,
+      "stage": 1,
+      "type": "upgrade",
+      "score": 18935,
+      "lives": 3,
+      "id": "pierce"
+    },
+    {
+      "t": 37.37,
+      "stage": 2,
+      "type": "stage",
+      "score": 18935,
+      "lives": 3,
+      "name": "回覧機関室"
+    },
+    {
+      "t": 44.39,
+      "stage": 2,
+      "type": "upgrade",
+      "score": 21155,
+      "lives": 3,
+      "id": "level",
+      "text": "処理速度 UP / Lv.4"
+    },
+    {
+      "t": 59.1,
+      "stage": 2,
+      "type": "boss",
+      "score": 40160,
+      "lives": 3,
+      "name": "差戻しループ",
+      "hint": "光る中継器を処理して、回覧の輪をほどく。"
+    },
+    {
+      "t": 59.1,
+      "stage": 2,
+      "type": "damage",
+      "score": 40160,
+      "lives": 2,
+      "x": 319.0818743140182,
+      "y": 248.02954982149856,
+      "reason": "決裁装置に接触"
+    },
+    {
+      "t": 61.87,
+      "stage": 2,
+      "type": "burst",
+      "score": 43850,
+      "lives": 2,
+      "x": 269.0986681839443,
+      "y": 222.82681161871426,
+      "cleared": 6
+    },
+    {
+      "t": 68.59,
+      "stage": 2,
+      "type": "stageClear",
+      "score": 51550,
+      "lives": 2,
+      "perfect": false
+    },
+    {
+      "t": 68.59,
+      "stage": 2,
+      "type": "burst",
+      "score": 51850,
+      "lives": 2,
+      "x": 144.8021175236336,
+      "y": 171.12816280601513,
+      "cleared": 3
+    },
+    {
+      "t": 70.4,
+      "stage": 2,
+      "type": "upgrade",
+      "score": 51850,
+      "lives": 3,
+      "id": "shield"
+    },
+    {
+      "t": 70.4,
+      "stage": 3,
+      "type": "stage",
+      "score": 51850,
+      "lives": 3,
+      "name": "月末決裁室"
+    },
+    {
+      "t": 81.46,
+      "stage": 3,
+      "type": "burst",
+      "score": 58065,
+      "lives": 3,
+      "x": 159.98191760209326,
+      "y": 391.6897751915299,
+      "cleared": 1
+    },
+    {
+      "t": 89.39,
+      "stage": 3,
+      "type": "boss",
+      "score": 74925,
+      "lives": 3,
+      "name": "月末締め",
+      "hint": "締切線の外へ。開いた承認口に近づく。"
+    },
+    {
+      "t": 97.18,
+      "stage": 3,
+      "type": "burst",
+      "score": 78105,
+      "lives": 3,
+      "x": 253.0536067154882,
+      "y": 356.4241037374266,
+      "cleared": 3
+    },
+    {
+      "t": 103.9,
+      "stage": 3,
+      "type": "burst",
+      "score": 78605,
+      "lives": 3,
+      "x": 236.44403059509526,
+      "y": 365.4893821387859,
+      "cleared": 5
+    },
+    {
+      "t": 107.31,
+      "stage": 3,
+      "type": "stageClear",
+      "score": 90605,
+      "lives": 3,
+      "perfect": true
+    },
+    {
+      "t": 109.12,
+      "stage": 3,
+      "type": "end",
+      "score": 101158,
+      "lives": 3,
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "errors": [],
+  "network": []
+}

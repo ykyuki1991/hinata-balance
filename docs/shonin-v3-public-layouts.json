@@ -1,0 +1,149 @@
+{
+  "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "outputs": [
+    {
+      "engine": "chromium",
+      "name": "laptop",
+      "w": 1280,
+      "h": 720,
+      "wide": 1280,
+      "button": 662,
+      "start": 444.390625,
+      "overlay": 435,
+      "started": true,
+      "performance": {
+        "samples": 183,
+        "p95": 0.29999999701976776,
+        "particles": 12,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "name": "iphone",
+      "w": 390,
+      "h": 844,
+      "wide": 390,
+      "button": 823,
+      "start": 575.890625,
+      "overlay": 625,
+      "started": true,
+      "performance": {
+        "samples": 168,
+        "p95": 0.29999999701976776,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "name": "compact",
+      "w": 320,
+      "h": 568,
+      "wide": 320,
+      "button": 552,
+      "start": 371,
+      "overlay": 359,
+      "started": true,
+      "performance": {
+        "samples": 153,
+        "p95": 0.29999999701976776,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "name": "landscape",
+      "w": 750,
+      "h": 342,
+      "wide": 750,
+      "button": 249,
+      "start": 270,
+      "overlay": 245,
+      "started": true,
+      "performance": {
+        "samples": 155,
+        "p95": 0.20000000298023224,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "name": "laptop",
+      "w": 1280,
+      "h": 720,
+      "wide": 1280,
+      "button": 657,
+      "start": 436.390625,
+      "overlay": 435,
+      "started": true,
+      "performance": {
+        "samples": 172,
+        "p95": 1,
+        "particles": 12,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "name": "iphone",
+      "w": 390,
+      "h": 844,
+      "wide": 390,
+      "button": 820,
+      "start": 568.890625,
+      "overlay": 625,
+      "started": true,
+      "performance": {
+        "samples": 165,
+        "p95": 1,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "name": "compact",
+      "w": 320,
+      "h": 568,
+      "wide": 320,
+      "button": 548,
+      "start": 366.5,
+      "overlay": 359,
+      "started": true,
+      "performance": {
+        "samples": 150,
+        "p95": 1,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "name": "landscape",
+      "w": 750,
+      "h": 342,
+      "wide": 750,
+      "button": 247.5,
+      "start": 268,
+      "overlay": 245,
+      "started": true,
+      "performance": {
+        "samples": 150,
+        "p95": 1,
+        "particles": 0,
+        "maxHazards": 0
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "results": [
+    {
+      "engine": "chromium",
+      "realClock": true,
+      "elapsedSeconds": 14.15833333333317,
+      "samples": 300,
+      "p95": 0.4000000059604645,
+      "particles": 0,
+      "maxHazards": 1
+    },
+    {
+      "engine": "webkit",
+      "realClock": true,
+      "elapsedSeconds": 14.074999999999841,
+      "samples": 300,
+      "p95": 1,
+      "particles": 0,
+      "maxHazards": 1
+    }
+  ],
+  "physicalIPhone": false
+}

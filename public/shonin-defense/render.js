@@ -1,4 +1,4 @@
-import {W,H,STAGES,TYPES} from './engine.js?v=3.0.0';
+import {W,H,STAGES,TYPES} from './engine.js?v=3.0.1';
 const TAU=Math.PI*2;
 export class Renderer{
  constructor(canvas,reduced=false){this.canvas=canvas;this.c=canvas.getContext('2d',{alpha:false});this.reduced=reduced;this.particles=[];this.labels=[];this.rings=[];this.shake=0;this.flash=0;this.joystick=null;this.resize();}
@@ -43,7 +43,7 @@ export class Renderer{
  for(const p of this.particles){p.life-=dt;p.x+=p.vx*dt;p.y+=p.vy*dt;c.globalAlpha=Math.max(0,p.life);c.fillStyle=p.color;c.fillRect(p.x,p.y,3,3);}c.globalAlpha=1;this.particles=this.particles.filter(p=>p.life>0);
  for(const r of this.rings){r.life-=dt;r.r+=dt*220;c.globalAlpha=Math.max(0,r.life*2);this.circle(r.x,r.y,r.r,null,r.color,2);}c.globalAlpha=1;this.rings=this.rings.filter(r=>r.life>0);
  for(const l of this.labels){l.life-=dt;l.y-=dt*20;c.globalAlpha=Math.min(1,Math.max(0,l.life*2));this.text(l.text,l.x,l.y,11,l.color);}c.globalAlpha=1;this.labels=this.labels.filter(l=>l.life>0);
- if(g.segment==='intro'&&g.phase==='playing'||g.segment==='clear'){const clear=g.segment==='clear';this.box(62,242,356,103,'#071b28ed',STAGES[g.stage].color+'66',10);this.text(clear?'全件、対応完了。':`0${g.stage+1} / ${STAGES[g.stage].time}`,240,268,13,STAGES[g.stage].color);this.text(clear?(g.stage===2?'SHIFT COMPLETE':'NEXT DEPARTMENT'):STAGES[g.stage].name,240,300,27,'#f0f6e9');this.text(clear?'少しだけ、ひと息。':STAGES[g.stage].note,240,329,11,'#9fb6be');}
+ if(g.phase==='playing'&&(g.segment==='intro'||g.segment==='clear')){const clear=g.segment==='clear';this.box(62,242,356,103,'#071b28ed',STAGES[g.stage].color+'66',10);this.text(clear?'全件、対応完了。':`0${g.stage+1} / ${STAGES[g.stage].time}`,240,268,13,STAGES[g.stage].color);this.text(clear?(g.stage===2?'SHIFT COMPLETE':'NEXT DEPARTMENT'):STAGES[g.stage].name,240,300,27,'#f0f6e9');this.text(clear?'少しだけ、ひと息。':STAGES[g.stage].note,240,329,11,'#9fb6be');}
  if(this.joystick){const j=this.joystick;this.circle(j.x,j.y,35,'#b9e6d510','#cbf7e850');this.circle(j.x+j.dx*28,j.y+j.dy*28,13,'#d5fbd755','#ddffe5aa');}
  c.restore();if(this.flash>0&&!this.reduced){c.fillStyle=`rgba(224,255,238,${this.flash})`;c.fillRect(0,0,W,H);}this.flash=Math.max(0,this.flash-dt);}
 }
