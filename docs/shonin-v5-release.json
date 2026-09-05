@@ -1,0 +1,144 @@
+{
+  "version": "5.0.0",
+  "url": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "deployedCommit": "acbd5edd86fbe5a700533aa5327530167567339b",
+  "pagesRun": "https://github.com/ykyuki1991/hinata-balance/actions/runs/33979829442",
+  "deployment": "success",
+  "unitTests": 26,
+  "lint": true,
+  "productionBuild": true,
+  "publicPlaythroughs": [
+    {
+      "engine": "chromium",
+      "name": "desktop",
+      "mode": "normal",
+      "seconds": 128.14166666671446,
+      "hits": 1,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "type": "weapon",
+          "option": "upper"
+        },
+        {
+          "stage": 1,
+          "type": "route",
+          "option": "upper"
+        }
+      ],
+      "input": "WASD movement + mouse aim/fire + Space/Shift",
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true
+    },
+    {
+      "engine": "chromium",
+      "name": "iphone",
+      "mode": "normal",
+      "seconds": 127.14166666671392,
+      "hits": 1,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "type": "weapon",
+          "option": "lower"
+        },
+        {
+          "stage": 1,
+          "type": "route",
+          "option": "lower"
+        }
+      ],
+      "input": "native CDP dual touch and action",
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true
+    },
+    {
+      "engine": "chromium",
+      "name": "small-phone",
+      "mode": "hard",
+      "seconds": 129.95833333337947,
+      "hits": 1,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "type": "weapon",
+          "option": "upper"
+        },
+        {
+          "stage": 1,
+          "type": "route",
+          "option": "lower"
+        }
+      ],
+      "input": "native CDP dual touch and action",
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true
+    },
+    {
+      "engine": "webkit",
+      "name": "iphone",
+      "mode": "normal",
+      "seconds": 126.76666666671362,
+      "hits": 1,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "type": "weapon",
+          "option": "lower"
+        },
+        {
+          "stage": 1,
+          "type": "route",
+          "option": "lower"
+        }
+      ],
+      "input": "WebKit dual PointerEvents and native action tap",
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true
+    },
+    {
+      "engine": "webkit",
+      "name": "landscape",
+      "mode": "normal",
+      "seconds": 154.55000000002377,
+      "hits": 3,
+      "routeHistory": [
+        {
+          "stage": 0,
+          "type": "weapon",
+          "option": "lower"
+        },
+        {
+          "stage": 1,
+          "type": "route",
+          "option": "lower"
+        }
+      ],
+      "input": "WebKit dual PointerEvents and native action tap",
+      "win": true,
+      "retry": true,
+      "gameOver": true,
+      "persistence": true
+    }
+  ],
+  "evidence": [
+    "shonin-v5-public-cache-upgrade.json",
+    "shonin-v5-public-chromium-desktop.json",
+    "shonin-v5-public-chromium-iphone.json",
+    "shonin-v5-public-chromium-small-phone.json",
+    "shonin-v5-public-integrity.json",
+    "shonin-v5-public-layouts.json",
+    "shonin-v5-public-webkit-iphone.json",
+    "shonin-v5-public-webkit-landscape.json"
+  ],
+  "physicalIPhone": false,
+  "limitations": "Automated browser inputs and visual review on Mac. No physical iPhone test or human playtest study."
+}

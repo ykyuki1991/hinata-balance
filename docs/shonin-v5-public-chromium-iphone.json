@@ -1,0 +1,329 @@
+{
+  "version": "5.0.0",
+  "base": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "engine": "chromium",
+  "name": "iphone",
+  "mode": "normal",
+  "route": "lower",
+  "input": "native CDP dual touch and action",
+  "physicalIPhone": false,
+  "layout": {
+    "width": 390,
+    "height": 664,
+    "fieldRatio": 1,
+    "scrollWidth": 390,
+    "actionsBottom": 650
+  },
+  "resultLayout": {
+    "scroll": 664,
+    "height": 664,
+    "bottom": 498.4375
+  },
+  "covered": [
+    "0:course",
+    "choice:weapon",
+    "0:boss",
+    "0:clear",
+    "1:intro",
+    "1:course",
+    "choice:route",
+    "1:boss",
+    "1:clear",
+    "2:intro",
+    "2:course",
+    "2:boss",
+    "2:clear"
+  ],
+  "win": true,
+  "seconds": 127.14166666671392,
+  "score": 64380,
+  "hits": 1,
+  "routeHistory": [
+    {
+      "stage": 0,
+      "type": "weapon",
+      "option": "lower"
+    },
+    {
+      "stage": 1,
+      "type": "route",
+      "option": "lower"
+    }
+  ],
+  "reflections": 3,
+  "guards": 3,
+  "chargedShots": 4,
+  "log": [
+    {
+      "t": 0,
+      "stage": 1,
+      "type": "stage"
+    },
+    {
+      "t": 5.78,
+      "stage": 1,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 300
+    },
+    {
+      "t": 10.23,
+      "stage": 1,
+      "type": "route",
+      "choice": "lower",
+      "kind": "weapon"
+    },
+    {
+      "t": 15.37,
+      "stage": 1,
+      "type": "burst",
+      "x": 75.86748570435,
+      "y": 293.365489537267
+    },
+    {
+      "t": 21.85,
+      "stage": 1,
+      "type": "chain",
+      "x": 267.8753765060263,
+      "y": 300,
+      "count": 0
+    },
+    {
+      "t": 30.9,
+      "stage": 1,
+      "type": "boss",
+      "name": "受付ゲート"
+    },
+    {
+      "t": 30.97,
+      "stage": 1,
+      "type": "burst",
+      "x": 77.6787267309879,
+      "y": 301.728627565279
+    },
+    {
+      "t": 33.97,
+      "stage": 1,
+      "type": "charged",
+      "x": 77.6787267309879,
+      "y": 350.615928979723
+    },
+    {
+      "t": 34.99,
+      "stage": 1,
+      "type": "stageClear"
+    },
+    {
+      "t": 37.5,
+      "stage": 2,
+      "type": "stage"
+    },
+    {
+      "t": 41.17,
+      "stage": 2,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 164.39548996367134
+    },
+    {
+      "t": 43.53,
+      "stage": 2,
+      "type": "route",
+      "choice": "lower",
+      "kind": "route"
+    },
+    {
+      "t": 43.58,
+      "stage": 2,
+      "type": "damage",
+      "x": 246.14842875873524,
+      "y": 438.0186163043546,
+      "reason": "書類に接触しました。"
+    },
+    {
+      "t": 44.67,
+      "stage": 2,
+      "type": "charged",
+      "x": 82.20621750226613,
+      "y": 402.66664293052224
+    },
+    {
+      "t": 50.46,
+      "stage": 2,
+      "type": "burst",
+      "x": 72.54807503791292,
+      "y": 286.78133246925137
+    },
+    {
+      "t": 57.71,
+      "stage": 2,
+      "type": "sync"
+    },
+    {
+      "t": 64.94,
+      "stage": 2,
+      "type": "chain",
+      "x": 208.69992469879972,
+      "y": 300,
+      "count": 0
+    },
+    {
+      "t": 65.17,
+      "stage": 2,
+      "type": "burst",
+      "x": 71.50749079081844,
+      "y": 375.2165584738778
+    },
+    {
+      "t": 70.33,
+      "stage": 2,
+      "type": "boss",
+      "name": "回覧機関"
+    },
+    {
+      "t": 70.37,
+      "stage": 2,
+      "type": "burst",
+      "x": 71.50749079081844,
+      "y": 291.11473907260086
+    },
+    {
+      "t": 78.56,
+      "stage": 2,
+      "type": "sync"
+    },
+    {
+      "t": 78.67,
+      "stage": 2,
+      "type": "burst",
+      "x": 71.50749079081844,
+      "y": 410.4464298485649
+    },
+    {
+      "t": 81.43,
+      "stage": 2,
+      "type": "stageClear"
+    },
+    {
+      "t": 83.93,
+      "stage": 3,
+      "type": "stage"
+    },
+    {
+      "t": 87.22,
+      "stage": 3,
+      "type": "chain",
+      "x": 289.40173192771186,
+      "y": 300,
+      "count": 1
+    },
+    {
+      "t": 92.58,
+      "stage": 3,
+      "type": "burst",
+      "x": 70.48192771084337,
+      "y": 247.5
+    },
+    {
+      "t": 98.69,
+      "stage": 3,
+      "type": "chain",
+      "x": 248.7277861445782,
+      "y": 300,
+      "count": 1
+    },
+    {
+      "t": 107.1,
+      "stage": 3,
+      "type": "chain",
+      "x": 358.67959337349976,
+      "y": 381.0555816661381,
+      "count": 0
+    },
+    {
+      "t": 110.72,
+      "stage": 3,
+      "type": "boss",
+      "name": "月末締め"
+    },
+    {
+      "t": 113.38,
+      "stage": 3,
+      "type": "guard",
+      "x": 84.74191446477207,
+      "y": 336.5900846439469
+    },
+    {
+      "t": 113.49,
+      "stage": 3,
+      "type": "reflect",
+      "x": 156.6170230044677,
+      "y": 335.3405664240922
+    },
+    {
+      "t": 113.66,
+      "stage": 3,
+      "type": "burst",
+      "x": 84.74191446477207,
+      "y": 336.59008464394753
+    },
+    {
+      "t": 114.63,
+      "stage": 3,
+      "type": "charged",
+      "x": 84.74191446477207,
+      "y": 313.92380838258833
+    },
+    {
+      "t": 118.77,
+      "stage": 3,
+      "type": "guard",
+      "x": 84.74191446477207,
+      "y": 270.5900846439469
+    },
+    {
+      "t": 118.91,
+      "stage": 3,
+      "type": "reflect",
+      "x": 156.65277786608252,
+      "y": 268.2084672531466
+    },
+    {
+      "t": 120.03,
+      "stage": 3,
+      "type": "charged",
+      "x": 84.74191446477207,
+      "y": 290.62162932274197
+    },
+    {
+      "t": 124.46,
+      "stage": 3,
+      "type": "guard",
+      "x": 84.74191446477207,
+      "y": 316.4821417511392
+    },
+    {
+      "t": 124.47,
+      "stage": 3,
+      "type": "reflect",
+      "x": 140.3789609376948,
+      "y": 334.6113166721822
+    },
+    {
+      "t": 124.63,
+      "stage": 3,
+      "type": "stageClear"
+    },
+    {
+      "t": 127.14,
+      "stage": 3,
+      "type": "end",
+      "win": true,
+      "reason": ""
+    }
+  ],
+  "retry": true,
+  "gameOver": true,
+  "persistence": true,
+  "errors": []
+}
