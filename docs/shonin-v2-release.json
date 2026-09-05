@@ -1,0 +1,18 @@
+{
+  "version": "2.0.3",
+  "url": "https://ykyuki1991.github.io/hinata-balance/shonin-defense/",
+  "deployedCommit": "0cad23a589e3137724ca0f46fd6ebd499dc98ceb",
+  "pagesRun": "https://github.com/ykyuki1991/hinata-balance/actions/runs/33970555538",
+  "deployment": "success",
+  "unitTests": 31,
+  "lint": "passed",
+  "build": "passed",
+  "publicSourceFilesMatch": 10,
+  "publicFullRuns": ["shonin-v2-public-chromium-desktop.json", "shonin-v2-public-webkit-iphone.json"],
+  "fullRunCoverage": ["all three stages", "all three bosses", "equipment choices", "clear", "natural game over", "retry", "record persistence"],
+  "fullRunVersion": "2.0.1",
+  "subsequentChanges": "2.0.2 updates inherited worker/HTTP caches; 2.0.3 changes the combo medal to an attainable 25 and adds a complete-route regression test. Enemy behavior, timing, movement, collisions, and stage logic are identical to the full-run version, verified by the engine diff.",
+  "finalPublicVerification": ["shonin-v2-public-integrity.json", "shonin-v2-public-cache-upgrade.json"],
+  "layouts": "Chrome and WebKit at 1280x720, 390x844, 320x568, 750x342, plus orientation changes",
+  "physicalIPhone": false
+}
